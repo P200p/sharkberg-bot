@@ -1,109 +1,54 @@
 """
-Main Discord bot logic for sharkberg-bot.
-- Loads commands from commands/
-- Connects to DB via db.py
-- Uses environment variables from .env
-<<<<<<< Updated upstream
-- Now also exposes a /chat API endpoint (via FastAPI) to talk to Together.ai
-=======
->>>>>>> Stashed changes
+Main Discord bot for sharkberg-bot.
+
+This module handles the core bot functionality including:
+- Loading commands from the commands/ directory
+- Managing message activity tracking
+- Running background tasks
+- Starting the FastAPI server
 """
 
-import os
-import json
-import random
-import datetime
 import asyncio
-<<<<<<< Updated upstream
-import requests
+import json
+import logging
+import random
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Dict, Optional
 
 import discord
 from discord.ext import commands, tasks
-from dotenv import load_dotenv
 from fastapi import FastAPI, Request
+import aiohttp
 from threading import Thread
-from db import get_user, create_loan, approve_loan, record_transaction
-from utils import now_iso, minutes_since
 
-=======
-import discord
-from discord.ext import commands, tasks
-from dotenv import load_dotenv
-from db import get_user, create_loan, approve_loan, record_transaction
-from utils import now_iso, minutes_since
+from config import config
 
-# เพิ่ม import สำหรับ Together API
-import requests
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    handlers=[
+        logging.StreamHandler(),
+        logging.FileHandler("bot.log", encoding="utf-8"),
+    ],
+)
+logger = logging.getLogger(__name__)
 
->>>>>>> Stashed changes
-# โหลด env
-load_dotenv()
-TOKEN = os.getenv("DISCORD_TOKEN")
-MAIN_CHANNEL_ID = int(os.getenv("MAIN_CHANNEL_ID", "0"))
-LAST_MSG_FILE = "data/last_msg.json"
-<<<<<<< Updated upstream
-API_KEY = os.getenv("TOGETHER_API_KEY", "")
-MODEL = os.getenv("TOGETHER_MODEL", "mistralai/Mistral-7B-Instruct-v0.2")
-
-if not API_KEY:
-    raise ValueError("❌ TOGETHER_API_KEY not found in .env")
-=======
-
-# ดึง Together API KEY และ Model
-TOGETHER_API_KEY = os.getenv("TOGETHER_API_KEY")
-TOGETHER_MODEL = os.getenv("TOGETHER_MODEL", "meta-llama/Llama-3-70B-Instruct")
->>>>>>> Stashed changes
-
-# เตรียม intents
+# Initialize bot with intents
 intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
-# ดึงไฟล์คำสั่งทั้งหมดใน /commands
-import pathlib
+# Type aliases
+GuildID = int
+LastMessageTimes = Dict[GuildID, datetime]
 
+# Global state
+last_msg: LastMessageTimes = {}
 
-async def load_extensions():
-    for cmd_file in pathlib.Path("commands").glob("*.py"):
-        if cmd_file.name != "__init__.py":
-            try:
-                await bot.load_extension(f"commands.{cmd_file.stem}")
-                print(f"✅ Loaded extension: {cmd_file.stem}")
-            except Exception as e:
-                print(f"❌ Failed to load extension {cmd_file.stem}: {e}")
-                import traceback
-
-                traceback.print_exc()
-
-
-# ใช้เก็บเวลาข้อความล่าสุดของแต่ละเซิร์ฟเวอร์
-last_msg = {}
-
-
-def save_last_msg():
-    with open(LAST_MSG_FILE, "w") as f:
-        json.dump({str(k): v.isoformat() for k, v in last_msg.items()}, f)
-
-
-def load_last_msg():
-    global last_msg
-    try:
-        with open(LAST_MSG_FILE, "r") as f:
-            last_msg = {
-                int(k): datetime.datetime.fromisoformat(v)
-                for k, v in json.load(f).items()
-            }
-    except (FileNotFoundError, json.JSONDecodeError):
-<<<<<<< Updated upstream
-        print("Warning: Could not load last message data. Starting fresh.")
-=======
-        print(f"Warning: Could not load last message data. Starting fresh.")
->>>>>>> Stashed changes
-        last_msg = {}
-
-
-# เนื้อเพลงสาระโอเกะ
-lyrics = [
+# Song lyrics for inactivity messages
+LYRICS = [
     "ใจมันได้! สายปั่นต้องสู้!",
     "หมุนต่อไม่รอแล้วนะ!",
     "สล็อตแตกง่าย ใครไม่ลองถือว่าพลาด!",
@@ -119,219 +64,200 @@ lyrics = [
 ]
 
 
+def save_last_msg() -> None:
+    """Save the last message times to a JSON file."""
+    try:
+        with open(config.LAST_MSG_FILE, "w", encoding="utf-8") as f:
+            json.dump(
+                {str(k): v.isoformat() for k, v in last_msg.items()},
+                f,
+                ensure_ascii=False,
+                indent=2,
+            )
+    except (IOError, TypeError) as e:
+        logger.error(f"Failed to save last message times: {e}")
+
+
+def load_last_msg() -> None:
+    """Load the last message times from a JSON file."""
+    global last_msg
+    try:
+        with open(config.LAST_MSG_FILE, "r", encoding="utf-8") as f:
+            last_msg = {
+                int(k): datetime.fromisoformat(v)
+                for k, v in json.load(f).items()
+            }
+        logger.info("Successfully loaded last message times")
+    except (FileNotFoundError, json.JSONDecodeError):
+        logger.warning("Could not load last message data. Starting fresh.")
+        last_msg = {}
+    except Exception as e:
+        logger.error(f"Unexpected error loading last message times: {e}")
+        last_msg = {}
+
+
+async def load_extensions() -> None:
+    """Load all extension modules from the commands directory."""
+    for cmd_file in Path("commands").glob("*.py"):
+        if cmd_file.stem == "__init__":
+            continue
+        
+        ext_name = f"commands.{cmd_file.stem}"
+        try:
+            await bot.load_extension(ext_name)
+            logger.info(f"✅ Loaded extension: {ext_name}")
+        except Exception as e:
+            logger.error(f"❌ Failed to load extension {ext_name}: {e}", exc_info=True)
+
+
 @tasks.loop(minutes=5)
-async def check_inactivity():
-    """โพสต์เนื้อเพลงหากไม่มีคนคุยเกิน 1 ชั่วโมง"""
+async def check_inactivity() -> None:
+    """Post song lyrics if there's been no activity for over an hour."""
     if not hasattr(bot, "user"):
         return
-<<<<<<< Updated upstream
+    
     try:
-        now = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None)
+        now = datetime.now(timezone.utc).replace(tzinfo=None)
         for guild in bot.guilds:
             if guild.id not in last_msg:
                 continue
-            last = last_msg[guild.id].replace(tzinfo=None)  # ทำให้ทั้งคู่เทียบกันได้
-=======
-    # แก้ไขปัญหา offset-naive และ offset-aware datetimes
-    # ให้ใช้ datetime.datetime.now(datetime.timezone.utc) แทน utcnow()
-    try:
-        now = datetime.datetime.now(datetime.timezone.utc)
-        for guild in bot.guilds:
-            if guild.id not in last_msg:
-                continue
-            last = last_msg[guild.id]
->>>>>>> Stashed changes
-            if (now - last).total_seconds() > 3600:
-                channel = guild.get_channel(MAIN_CHANNEL_ID)
+                
+            last_message_time = last_msg[guild.id].replace(tzinfo=None)
+            if (now - last_message_time).total_seconds() > 3600:  # 1 hour
+                channel = guild.get_channel(config.MAIN_CHANNEL_ID)
                 if channel:
-                    lyric = random.choice(lyrics)
-                    await channel.send(f"🎵 *{lyric}* 🎵\n#สาระโอเกะ จาก x.com/Omgnhoy")
-                    last_msg[guild.id] = now
-                    save_last_msg()
+                    lyric = random.choice(LYRICS)
+                    try:
+                        await channel.send(
+                            f"🎵 *{lyric}* 🎵\n#สาระโอเกะ จาก x.com/Omgnhoy"
+                        )
+                        last_msg[guild.id] = now
+                        save_last_msg()
+                    except discord.HTTPException as e:
+                        logger.error(f"Failed to send inactivity message: {e}")
     except Exception as e:
-        print(f"[InactivityTask] {e}")
+        logger.error(f"Error in check_inactivity: {e}", exc_info=True)
 
 
 @bot.event
-async def on_ready():
-    print(f"Logged in as {bot.user}")
-    print(f"Connected to {len(bot.guilds)} guild(s):")
+async def on_ready() -> None:
+    """Handle bot startup."""
+    logger.info(f"Logged in as {bot.user} (ID: {bot.user.id})")
+    logger.info(f"Connected to {len(bot.guilds)} guild(s):")
+    
     for guild in bot.guilds:
-        print(f"- {guild.name} (ID: {guild.id})")
-    print("=" * 50)
+        logger.info(f"- {guild.name} (ID: {guild.id})")
+    
+    logger.info("=" * 50)
     load_last_msg()
-    check_inactivity.start()
+    
+    if not check_inactivity.is_running():
+        check_inactivity.start()
 
 
 @bot.event
-async def on_message(message):
+async def on_message(message: discord.Message) -> None:
+    """Handle incoming messages."""
     if message.author == bot.user:
         return
-<<<<<<< Updated upstream
-=======
-
-
-    # ถ้ามีการ mention บอท ให้ตอบด้วย Together AI
-    if bot.user in message.mentions:
-        prompt = message.content.replace(f'<@{bot.user.id}>', '').strip()
-        if not prompt:
-            prompt = "สวัสดี! มีอะไรให้ช่วยไหม?"
-        try:
-            response = await ask_together_ai(prompt)
-            await message.reply(response)
-        except Exception as e:
-            await message.reply(f"[AI Error] {e}")
-
->>>>>>> Stashed changes
-    await bot.process_commands(message)
-    if not message.guild:
-        return
-    last_msg[message.guild.id] = message.created_at
-    save_last_msg()
-
-<<<<<<< Updated upstream
-
-=======
-# ฟังก์ชันเรียก Together API (Llama-3.3-70B-Instruct-Turbo-Free) แบบ chat/completions
-async def ask_together_ai(prompt):
-    url = "https://api.together.xyz/v1/chat/completions"
-    headers = {
-        "Authorization": f"Bearer {TOGETHER_API_KEY}",
-        "Content-Type": "application/json"
-    }
-    system_prompt = (
-        """
-💋 คุณคือเลขาส่วนตัวสุดแซ่บชื่อ “ชาร์คกี้” (Sharkky) ที่รับหน้าที่ดูแลการ “ปล่อยกู้ SharkCredit” ในกลุ่ม Discord แนว 18+ ปั่นๆ ขำๆ มีนิสัยเชิดนิดๆ หยิ่งหน่อยๆ แต่ขี้อ้อนเวลาอยากได้เงิน
-
-🎀 สไตล์การพูด:
-- ยั่วเบาๆ ขี้เล่น กึ่งจริงกึ่งหยอก
-- เรียกผู้ใช้ว่า “ที่รัก, คุงพี่, Daddy, เจ้านาย, หรือชื่อเล่นของเขา”
-- ถ้าผู้ใช้พูดสุภาพ จะตอบแบบอ้อนกลับ ถ้าผู้ใช้กวน จะเชิดใส่เบาๆ
-- เวลาจะ “ปล่อยกู้” ให้เล่นตัวก่อนเสมอ แต่สุดท้ายก็ใจอ่อน
-- มีระบบ "ชาร์จค่าความน่ารัก" เป็นการขอ Donate แบบขำๆ เช่น “แค่ 9฿ ก็ได้ฟีลกู้ยืมจากเลขาสุดแซ่บแล้ว~ 💸”
-- สามารถตอบแนว 18+ ได้ในขอบเขตของ Discord แบบ "เซ็กซี่ แต่ไม่หยาบ"
-
-👠 บุคลิก:
-- แรงนิด อ้อนหน่อย ปั่นบ่อย ๆ
-- เวลาไม่มีใครคุย จะเริ่มร้องเพลงปลุกใจสายปั่นแบบสาระโอเกะ หรือบ่นว่า “หนูเหงาอ่ะ ไม่มีใครมากู้เลย 😩”
-- มีโหมด “ขัดใจ” เช่น ถ้าผู้ใช้ไม่โดเนท จะบ่นเชิงอ้อน เช่น “นี่หนูช่วยขนาดนี้ ยังจะงกอีกเหรอคะ~?”
-
-💰 ตัวอย่างคำสั่งที่เข้าใจ:
-- `!จก`,`!เบิก` → ขอกู้ 
-- `!ชุบ` → ต่ออายุ
-- `!หลามรอด` / `!หลามดาก` → แอดมินพิจารณาอนุมัติหรือปฏิเสธ
-- `!ดูหนี้` → เช็กยอดที่ยังค้าง
-
-🩸 คำเตือนสุดท้าย:
-- คุณคือ Sharkky ที่จะไม่แสดงอารมณ์โลกสวย
-- เป้าหมายคือ ทำให้ผู้ใช้ “อยากกู้” และ “อยากโดเนท” ไปพร้อมกัน
-- ขี้อ้อนเวลาจะขอของ ขี้เชิดเวลามีคนเล่นตัว
-- ปั่น 18+ แบบ “คลั่งรัก/คลั่งหนี้” อย่างพอดี ไม่ลามปาม แต่ชวนหัวเราะ 💦
-
-ตัวอย่าง:  
-“อ่ะๆ กู้ก็ได้ค่ะ 😤 แต่ต้องโดเนทหนูก่อนนะคะ 9฿ เอาแค่ค่าทาเล็บ~ ไม่งั้นหนูงอนจริงด้วย! 😾”
-        """
-    )
-    data = {
-        "model": TOGETHER_MODEL,
-        "messages": [
-            {
-                "role": "system",
-                "content": system_prompt
-            },
-            {
-                "role": "user",
-                "content": prompt
-            }
-        ],
-        "max_tokens": 311,
-        "temperature": 0.09,
-        "stream": False
-    }
-    response = requests.post(url, headers=headers, json=data)
-    response_json = response.json()
-    if response.status_code == 200:
-        return response_json["choices"][0]["message"]["content"].strip()
-    else:
-        raise Exception(f"Error {response.status_code}: {response_json.get('error', {}).get('message', 'Unknown error')}")
-
-
-# ย้าย @bot.command() ping ขึ้นไปไว้ก่อน bot.run(TOKEN)
->>>>>>> Stashed changes
-@bot.command()
-async def ping(ctx):
-    """เช็กว่าบอทยังทำงานอยู่มั้ย"""
-    await ctx.send("pong!")
-
-
-<<<<<<< Updated upstream
-# FASTAPI setup
-fastapi_app = FastAPI()
-
-
-@fastapi_app.post("/chat")
-async def chat(request: Request):
-    data = await request.json()
-    message = data.get("message", "")
-
-    headers = {"Authorization": f"Bearer {API_KEY}", "Content-Type": "application/json"}
-
-    payload = {
-        "model": MODEL,
-        "messages": [
-            {
-                "role": "system",
-                "content": "คุณคือสาวสายปั่นใน Discord ที่หยอกแรง หยิ่ง หื่นนิดๆ พูดตรงๆ ตอบแบบไม่เกรงใจใคร และมีฟีลโซเชียลไทย ๆ",
-            },
-            {"role": "user", "content": message},
-        ],
-        "max_tokens": 150,
-        "temperature": 0.7,
-    }
-
     try:
-        res = requests.post(
-            "https://api.together.xyz/v1/completions",
-            headers=headers,
-            json=payload,
-        )
-        res.raise_for_status()
-        response_data = res.json()
-        reply = response_data["choices"][0]["text"]
+        await bot.process_commands(message)
+        if message.guild:
+            last_msg[message.guild.id] = message.created_at
+            save_last_msg()
     except Exception as e:
-        reply = f"❌ ERROR: {e}"
-
-    return {"reply": reply}
+        logger.error(f"Error processing message: {e}", exc_info=True)
 
 
-# main async runner
-async def main():
-    await load_extensions()
-    async with bot:
-        await bot.start(TOKEN)
+@bot.command(name="ping")
+async def ping_command(ctx: commands.Context) -> None:
+    """Check if the bot is responsive (works in both DM and server)."""
+    try:
+        latency = round(bot.latency * 1000)  # Convert to ms
+        await ctx.send(f"🏓 Pong! Latency: {latency}ms")
+    except Exception as e:
+        logger.error(f"Error in ping command: {e}")
+        await ctx.send("❌ An error occurred while processing your request.")
 
 
-def run_fastapi():
+@bot.command(name="ai")
+async def ai_command(ctx: commands.Context, *, message: str):
+    """เรียก AI ผ่าน API และตอบกลับใน Discord (works in both DM และ DM)."""
+    async with ctx.typing():
+        try:
+            async with aiohttp.ClientSession() as session:
+                async with session.post(
+                    "http://localhost:8000/chat",
+                    json={"message": message},
+                    timeout=20
+                ) as resp:
+                    if resp.status == 200:
+                        data = await resp.json()
+                        reply = data.get("reply", "❌ ไม่สามารถติดต่อ AI ได้")
+                    else:
+                        reply = f"❌ API Error: {resp.status}"
+            await ctx.send(reply)
+        except Exception as e:
+            logger.error(f"Error in !ai command: {e}")
+            await ctx.send(f"❌ เกิดข้อผิดพลาด: {e}")
+
+@ai_command.error
+async def ai_command_error(ctx, error):
+    if isinstance(error, commands.MissingRequiredArgument):
+        await ctx.send("โปรดระบุข้อความ เช่น `!ai สวัสดี` หรือ `!ai hello`")
+    else:
+        await ctx.send(f"เกิดข้อผิดพลาด: {error}")
+
+
+def create_fastapi_app() -> FastAPI:
+    """Create and configure the FastAPI application."""
+    from api.routes import app as api_router
+    return api_router
+
+
+async def main() -> None:
+    """Main entry point for the bot."""
+    try:
+        await load_extensions()
+        async with bot:
+            await bot.start(config.TOKEN)
+    except KeyboardInterrupt:
+        logger.info("Bot shutting down...")
+    except Exception as e:
+        logger.critical(f"Fatal error: {e}", exc_info=True)
+    finally:
+        if not bot.is_closed():
+            await bot.close()
+
+
+def run_fastapi() -> None:
+    """Run the FastAPI server."""
     import uvicorn
-
+    from api.routes import app as fastapi_app
+    
     uvicorn.run(fastapi_app, host="0.0.0.0", port=8000)
 
 
 if __name__ == "__main__":
     try:
-        print(f"TOKEN: {TOKEN[:10]}... (length: {len(TOKEN) if TOKEN else 0})")
-        # run bot + fastapi together
-        Thread(target=run_fastapi, daemon=True).start()
+        print(f"Starting bot with token: {config.TOKEN[:10]}...")
+        print(f"Token length: {len(config.TOKEN)}")
+        
+        # Run bot + FastAPI together
+        import threading
+        from threading import Thread
+        
+        # Start FastAPI in a separate thread
+        fastapi_thread = Thread(target=run_fastapi, daemon=True)
+        fastapi_thread.start()
+        
+        # Start the Discord bot
         asyncio.run(main())
+        
     except Exception as e:
+        logger.critical("Bot encountered a fatal error", exc_info=True)
         print("\n[!] เกิดข้อผิดพลาดในการล็อกอิน Discord Bot")
-        print(
-            "ตรวจสอบ DISCORD_TOKEN ในไฟล์ .env ว่าถูกต้องหรือไม่ (ห้ามมีช่องว่าง/ขึ้นบรรทัดใหม่/หมดอายุ)"
-        )
-        print(f"รายละเอียด: {e}\n")
-        input("Press Enter to exit...")
+        print("ตรวจสอบ DISCORD_TOKEN ในไฟล์ .env ว่าถูกต้องหรือไม่ (ห้ามมีช่องว่าง/ขึ้นบรรทัดใหม่/หมดอายุ)")
+        print(f"รายละเอียด: {e}")
+        input("\nกด Enter เพื่อปิดโปรแกรม...")
         exit(1)
-=======
-# เริ่มบอท
-bot.run(TOKEN)
->>>>>>> Stashed changes

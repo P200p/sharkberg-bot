@@ -1,0 +1,293 @@
+2025-07-11 10:21:42,989 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-07-11 10:23:21,483 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-07-11 10:23:21,504 - __main__ - INFO - ✅ Loaded extension: commands.admin
+2025-07-11 10:23:21,528 - __main__ - INFO - ✅ Loaded extension: commands.fun
+2025-07-11 10:23:21,540 - __main__ - ERROR - ❌ Failed to load extension commands.loan: Extension 'commands.loan' raised an error: SyntaxError: invalid syntax (loan.py, line 2)
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\sharkberg-bot\.venv\lib\site-packages\discord\ext\commands\bot.py", line 951, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\HP\Desktop\sharkberg-bot\commands\loan.py", line 2
+    <<<<<<< Updated upstream
+    ^^
+SyntaxError: invalid syntax
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\sharkberg-bot\bot.py", line 107, in load_extensions
+    await bot.load_extension(ext_name)
+  File "C:\Users\HP\Desktop\sharkberg-bot\.venv\lib\site-packages\discord\ext\commands\bot.py", line 1029, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\HP\Desktop\sharkberg-bot\.venv\lib\site-packages\discord\ext\commands\bot.py", line 954, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'commands.loan' raised an error: SyntaxError: invalid syntax (loan.py, line 2)
+2025-07-11 10:23:21,561 - __main__ - ERROR - ❌ Failed to load extension commands.profile: Extension 'commands.profile' raised an error: SyntaxError: invalid syntax (profile.py, line 2)
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\sharkberg-bot\.venv\lib\site-packages\discord\ext\commands\bot.py", line 951, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\HP\Desktop\sharkberg-bot\commands\profile.py", line 2
+    <<<<<<< Updated upstream
+    ^^
+SyntaxError: invalid syntax
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\sharkberg-bot\bot.py", line 107, in load_extensions
+    await bot.load_extension(ext_name)
+  File "C:\Users\HP\Desktop\sharkberg-bot\.venv\lib\site-packages\discord\ext\commands\bot.py", line 1029, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\HP\Desktop\sharkberg-bot\.venv\lib\site-packages\discord\ext\commands\bot.py", line 954, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'commands.profile' raised an error: SyntaxError: invalid syntax (profile.py, line 2)
+2025-07-11 10:23:21,593 - __main__ - INFO - ✅ Loaded extension: commands.transfer
+2025-07-11 10:23:21,595 - discord.client - INFO - logging in using static token
+2025-07-11 10:23:24,012 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: c5c528c46fa930c83b823c664478d434).
+2025-07-11 10:23:26,152 - __main__ - INFO - Logged in as No4#6131 (ID: 1389607579746828519)
+2025-07-11 10:23:26,154 - __main__ - INFO - Connected to 1 guild(s):
+2025-07-11 10:23:26,154 - __main__ - INFO - - กู้Shark (ID: 767983036939632650)
+2025-07-11 10:23:26,156 - __main__ - INFO - ==================================================
+2025-07-11 10:23:26,158 - __main__ - WARNING - Could not load last message data. Starting fresh.
+2025-07-11 10:33:51,831 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-07-11 10:33:51,840 - __main__ - INFO - ✅ Loaded extension: commands.admin
+2025-07-11 10:33:51,844 - __main__ - INFO - ✅ Loaded extension: commands.fun
+2025-07-11 10:33:51,851 - __main__ - ERROR - ❌ Failed to load extension commands.loan: Extension 'commands.loan' raised an error: SyntaxError: invalid syntax (loan.py, line 2)
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\sharkberg-bot\.venv\lib\site-packages\discord\ext\commands\bot.py", line 951, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\HP\Desktop\sharkberg-bot\commands\loan.py", line 2
+    <<<<<<< Updated upstream
+    ^^
+SyntaxError: invalid syntax
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\sharkberg-bot\bot.py", line 108, in load_extensions
+    await bot.load_extension(ext_name)
+  File "C:\Users\HP\Desktop\sharkberg-bot\.venv\lib\site-packages\discord\ext\commands\bot.py", line 1029, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\HP\Desktop\sharkberg-bot\.venv\lib\site-packages\discord\ext\commands\bot.py", line 954, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'commands.loan' raised an error: SyntaxError: invalid syntax (loan.py, line 2)
+2025-07-11 10:33:51,909 - __main__ - ERROR - ❌ Failed to load extension commands.profile: Extension 'commands.profile' raised an error: SyntaxError: invalid syntax (profile.py, line 2)
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\sharkberg-bot\.venv\lib\site-packages\discord\ext\commands\bot.py", line 951, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\HP\Desktop\sharkberg-bot\commands\profile.py", line 2
+    <<<<<<< Updated upstream
+    ^^
+SyntaxError: invalid syntax
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\sharkberg-bot\bot.py", line 108, in load_extensions
+    await bot.load_extension(ext_name)
+  File "C:\Users\HP\Desktop\sharkberg-bot\.venv\lib\site-packages\discord\ext\commands\bot.py", line 1029, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\HP\Desktop\sharkberg-bot\.venv\lib\site-packages\discord\ext\commands\bot.py", line 954, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'commands.profile' raised an error: SyntaxError: invalid syntax (profile.py, line 2)
+2025-07-11 10:33:51,934 - __main__ - INFO - ✅ Loaded extension: commands.transfer
+2025-07-11 10:33:51,940 - discord.client - INFO - logging in using static token
+2025-07-11 10:33:54,218 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 4508c20e222d2cd7f5002531547055b2).
+2025-07-11 10:33:56,288 - __main__ - INFO - Logged in as No4#6131 (ID: 1389607579746828519)
+2025-07-11 10:33:56,289 - __main__ - INFO - Connected to 1 guild(s):
+2025-07-11 10:33:56,290 - __main__ - INFO - - กู้Shark (ID: 767983036939632650)
+2025-07-11 10:33:56,291 - __main__ - INFO - ==================================================
+2025-07-11 10:33:56,292 - __main__ - INFO - Successfully loaded last message times
+2025-07-11 10:43:33,092 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-07-11 10:43:33,966 - __main__ - INFO - ✅ Loaded extension: commands.admin
+2025-07-11 10:43:33,968 - __main__ - INFO - ✅ Loaded extension: commands.fun
+2025-07-11 10:43:33,971 - __main__ - INFO - ✅ Loaded extension: commands.transfer
+2025-07-11 10:43:33,971 - discord.client - INFO - logging in using static token
+2025-07-11 10:43:36,768 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 8248eea27359c4aeafcc942a11a134e1).
+2025-07-11 10:43:38,812 - __main__ - INFO - Logged in as No4#6131 (ID: 1389607579746828519)
+2025-07-11 10:43:38,812 - __main__ - INFO - Connected to 1 guild(s):
+2025-07-11 10:43:38,815 - __main__ - INFO - - กู้Shark (ID: 767983036939632650)
+2025-07-11 10:43:38,818 - __main__ - INFO - ==================================================
+2025-07-11 10:43:38,822 - __main__ - INFO - Successfully loaded last message times
+2025-07-11 10:45:08,235 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-07-11 10:45:09,085 - __main__ - INFO - ✅ Loaded extension: commands.admin
+2025-07-11 10:45:09,091 - __main__ - INFO - ✅ Loaded extension: commands.fun
+2025-07-11 10:45:09,095 - __main__ - INFO - ✅ Loaded extension: commands.transfer
+2025-07-11 10:45:09,098 - discord.client - INFO - logging in using static token
+2025-07-11 10:45:11,576 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 00694d85284f5ee3d53649ffe2847159).
+2025-07-11 10:45:13,583 - __main__ - INFO - Logged in as No4#6131 (ID: 1389607579746828519)
+2025-07-11 10:45:13,584 - __main__ - INFO - Connected to 1 guild(s):
+2025-07-11 10:45:13,585 - __main__ - INFO - - กู้Shark (ID: 767983036939632650)
+2025-07-11 10:45:13,586 - __main__ - INFO - ==================================================
+2025-07-11 10:45:13,589 - __main__ - INFO - Successfully loaded last message times
+2025-07-11 10:49:13,840 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-07-11 10:49:14,586 - __main__ - INFO - ✅ Loaded extension: commands.admin
+2025-07-11 10:49:14,592 - __main__ - INFO - ✅ Loaded extension: commands.fun
+2025-07-11 10:49:14,600 - __main__ - INFO - ✅ Loaded extension: commands.transfer
+2025-07-11 10:49:14,631 - discord.client - INFO - logging in using static token
+2025-07-11 10:49:16,923 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 95c068e0a7df01e30d91e1c8859eeea6).
+2025-07-11 10:49:19,066 - __main__ - INFO - Logged in as No4#6131 (ID: 1389607579746828519)
+2025-07-11 10:49:19,071 - __main__ - INFO - Connected to 1 guild(s):
+2025-07-11 10:49:19,073 - __main__ - INFO - - กู้Shark (ID: 767983036939632650)
+2025-07-11 10:49:19,074 - __main__ - INFO - ==================================================
+2025-07-11 10:49:19,080 - __main__ - INFO - Successfully loaded last message times
+2025-07-11 10:53:08,748 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-07-11 10:53:11,278 - __main__ - INFO - ✅ Loaded extension: commands.admin
+2025-07-11 10:53:11,281 - __main__ - INFO - ✅ Loaded extension: commands.fun
+2025-07-11 10:53:11,283 - __main__ - INFO - ✅ Loaded extension: commands.transfer
+2025-07-11 10:53:11,284 - discord.client - INFO - logging in using static token
+2025-07-11 10:53:13,525 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 5717394343c2da62730224f683bb709c).
+2025-07-11 10:53:15,534 - __main__ - INFO - Logged in as No4#6131 (ID: 1389607579746828519)
+2025-07-11 10:53:15,535 - __main__ - INFO - Connected to 1 guild(s):
+2025-07-11 10:53:15,535 - __main__ - INFO - - กู้Shark (ID: 767983036939632650)
+2025-07-11 10:53:15,536 - __main__ - INFO - ==================================================
+2025-07-11 10:53:15,537 - __main__ - INFO - Successfully loaded last message times
+2025-07-11 10:53:41,212 - discord.ext.commands.bot - ERROR - Ignoring exception in command ai
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 853, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 697, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: message is a required argument that is missing.
+2025-07-11 10:54:03,764 - discord.ext.commands.bot - ERROR - Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "จก" is not found
+2025-07-11 10:56:52,873 - discord.ext.commands.bot - ERROR - Ignoring exception in command ai
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\HP\Desktop\sharkberg-bot\bot.py", line 186, in ai_command
+    await ctx.trigger_typing()
+AttributeError: 'Context' object has no attribute 'trigger_typing'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'Context' object has no attribute 'trigger_typing'
+2025-07-11 10:58:56,975 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-07-11 10:58:58,217 - __main__ - INFO - ✅ Loaded extension: commands.admin
+2025-07-11 10:58:58,219 - __main__ - INFO - ✅ Loaded extension: commands.fun
+2025-07-11 10:58:58,221 - __main__ - INFO - ✅ Loaded extension: commands.transfer
+2025-07-11 10:58:58,222 - discord.client - INFO - logging in using static token
+2025-07-11 10:59:01,031 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 6da8753611273c95aa7982c65f978f0c).
+2025-07-11 10:59:03,102 - __main__ - INFO - Logged in as No4#6131 (ID: 1389607579746828519)
+2025-07-11 10:59:03,103 - __main__ - INFO - Connected to 1 guild(s):
+2025-07-11 10:59:03,104 - __main__ - INFO - - กู้Shark (ID: 767983036939632650)
+2025-07-11 10:59:03,104 - __main__ - INFO - ==================================================
+2025-07-11 10:59:03,106 - __main__ - INFO - Successfully loaded last message times
+2025-07-11 10:59:52,078 - discord.ext.commands.bot - ERROR - Ignoring exception in command ai
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\HP\Desktop\sharkberg-bot\bot.py", line 186, in ai_command
+    async with ctx.typing():
+AttributeError: 'Context' object has no attribute 'trigger_typing'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'Context' object has no attribute 'trigger_typing'
+2025-07-11 11:00:02,594 - discord.ext.commands.bot - ERROR - Ignoring exception in command ai
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\HP\Desktop\sharkberg-bot\bot.py", line 186, in ai_command
+    async with ctx.typing():
+AttributeError: 'Context' object has no attribute 'trigger_typing'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'Context' object has no attribute 'trigger_typing'
+2025-07-11 11:00:03,984 - api.routes - ERROR - API request failed: 429 Client Error: Too Many Requests for url: https://api.together.xyz/v1/completions
+2025-07-11 11:05:00,591 - discord.ext.commands.bot - ERROR - Ignoring exception in command ai
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\HP\Desktop\sharkberg-bot\bot.py", line 186, in ai_command
+    async with ctx.typing():
+AttributeError: 'Context' object has no attribute 'trigger_typing'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'Context' object has no attribute 'trigger_typing'
+2025-07-11 11:05:53,059 - discord.ext.commands.bot - ERROR - Ignoring exception in command ai
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\HP\Desktop\sharkberg-bot\bot.py", line 186, in ai_command
+    async with ctx.typing():
+AttributeError: 'Context' object has no attribute 'trigger_typing'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'Context' object has no attribute 'trigger_typing'
+2025-07-11 11:06:17,915 - discord.ext.commands.bot - ERROR - Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "จก" is not found
+2025-07-11 11:06:17,927 - discord.ext.commands.bot - ERROR - Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "จก" is not found
+2025-07-11 11:44:01,561 - discord.gateway - INFO - Shard ID None has successfully RESUMED session 5717394343c2da62730224f683bb709c.
+2025-07-11 20:37:07,941 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-07-11 20:37:08,565 - __main__ - INFO - ✅ Loaded extension: commands.admin
+2025-07-11 20:37:08,573 - __main__ - INFO - ✅ Loaded extension: commands.fun
+2025-07-11 20:37:08,576 - __main__ - INFO - ✅ Loaded extension: commands.transfer
+2025-07-11 20:37:08,585 - discord.client - INFO - logging in using static token
+2025-07-11 20:37:12,487 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: df5fe0ee40039a05d6da30a12754970d).
+2025-07-11 20:37:14,566 - __main__ - INFO - Logged in as No4#6131 (ID: 1389607579746828519)
+2025-07-11 20:37:14,567 - __main__ - INFO - Connected to 1 guild(s):
+2025-07-11 20:37:14,567 - __main__ - INFO - - กู้Shark (ID: 767983036939632650)
+2025-07-11 20:37:14,568 - __main__ - INFO - ==================================================
+2025-07-11 20:37:14,569 - __main__ - INFO - Successfully loaded last message times
+2025-07-11 21:03:27,023 - discord.gateway - INFO - Shard ID None has successfully RESUMED session df5fe0ee40039a05d6da30a12754970d.

@@ -1,0 +1,962 @@
+[
+    {
+        "label": "discord",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "discord",
+        "description": "discord",
+        "detail": "discord",
+        "documentation": {}
+    },
+    {
+        "label": "commands",
+        "importPath": "discord.ext",
+        "description": "discord.ext",
+        "isExtraImport": true,
+        "detail": "discord.ext",
+        "documentation": {}
+    },
+    {
+        "label": "commands",
+        "importPath": "discord.ext",
+        "description": "discord.ext",
+        "isExtraImport": true,
+        "detail": "discord.ext",
+        "documentation": {}
+    },
+    {
+        "label": "commands",
+        "importPath": "discord.ext",
+        "description": "discord.ext",
+        "isExtraImport": true,
+        "detail": "discord.ext",
+        "documentation": {}
+    },
+    {
+        "label": "commands",
+        "importPath": "discord.ext",
+        "description": "discord.ext",
+        "isExtraImport": true,
+        "detail": "discord.ext",
+        "documentation": {}
+    },
+    {
+        "label": "commands",
+        "importPath": "discord.ext",
+        "description": "discord.ext",
+        "isExtraImport": true,
+        "detail": "discord.ext",
+        "documentation": {}
+    },
+    {
+        "label": "commands",
+        "importPath": "discord.ext",
+        "description": "discord.ext",
+        "isExtraImport": true,
+        "detail": "discord.ext",
+        "documentation": {}
+    },
+    {
+        "label": "commands",
+        "importPath": "discord.ext",
+        "description": "discord.ext",
+        "isExtraImport": true,
+        "detail": "discord.ext",
+        "documentation": {}
+    },
+    {
+        "label": "commands",
+        "importPath": "discord.ext",
+        "description": "discord.ext",
+        "isExtraImport": true,
+        "detail": "discord.ext",
+        "documentation": {}
+    },
+    {
+        "label": "tasks",
+        "importPath": "discord.ext",
+        "description": "discord.ext",
+        "isExtraImport": true,
+        "detail": "discord.ext",
+        "documentation": {}
+    },
+    {
+        "label": "record_transaction",
+        "importPath": "db",
+        "description": "db",
+        "isExtraImport": true,
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "create_loan",
+        "importPath": "db",
+        "description": "db",
+        "isExtraImport": true,
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "approve_loan",
+        "importPath": "db",
+        "description": "db",
+        "isExtraImport": true,
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "record_transaction",
+        "importPath": "db",
+        "description": "db",
+        "isExtraImport": true,
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "create_loan",
+        "importPath": "db",
+        "description": "db",
+        "isExtraImport": true,
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "approve_loan",
+        "importPath": "db",
+        "description": "db",
+        "isExtraImport": true,
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "record_transaction",
+        "importPath": "db",
+        "description": "db",
+        "isExtraImport": true,
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "get_user",
+        "importPath": "db",
+        "description": "db",
+        "isExtraImport": true,
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "set_display_name",
+        "importPath": "db",
+        "description": "db",
+        "isExtraImport": true,
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "get_user",
+        "importPath": "db",
+        "description": "db",
+        "isExtraImport": true,
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "set_display_name",
+        "importPath": "db",
+        "description": "db",
+        "isExtraImport": true,
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "record_transaction",
+        "importPath": "db",
+        "description": "db",
+        "isExtraImport": true,
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "get_user",
+        "importPath": "db",
+        "description": "db",
+        "isExtraImport": true,
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "create_loan",
+        "importPath": "db",
+        "description": "db",
+        "isExtraImport": true,
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "approve_loan",
+        "importPath": "db",
+        "description": "db",
+        "isExtraImport": true,
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "record_transaction",
+        "importPath": "db",
+        "description": "db",
+        "isExtraImport": true,
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "defaultdict",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio",
+        "description": "asyncio",
+        "detail": "asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "now_iso",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "minutes_since",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "pathlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "get_user",
+        "importPath": "supabase_helpers",
+        "description": "supabase_helpers",
+        "isExtraImport": true,
+        "detail": "supabase_helpers",
+        "documentation": {}
+    },
+    {
+        "label": "add_loan",
+        "importPath": "supabase_helpers",
+        "description": "supabase_helpers",
+        "isExtraImport": true,
+        "detail": "supabase_helpers",
+        "documentation": {}
+    },
+    {
+        "label": "update_loan",
+        "importPath": "supabase_helpers",
+        "description": "supabase_helpers",
+        "isExtraImport": true,
+        "detail": "supabase_helpers",
+        "documentation": {}
+    },
+    {
+        "label": "add_transaction",
+        "importPath": "supabase_helpers",
+        "description": "supabase_helpers",
+        "isExtraImport": true,
+        "detail": "supabase_helpers",
+        "documentation": {}
+    },
+    {
+        "label": "create_client",
+        "importPath": "supabase",
+        "description": "supabase",
+        "isExtraImport": true,
+        "detail": "supabase",
+        "documentation": {}
+    },
+    {
+        "label": "create_client",
+        "importPath": "supabase",
+        "description": "supabase",
+        "isExtraImport": true,
+        "detail": "supabase",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "platform",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "platform",
+        "description": "platform",
+        "detail": "platform",
+        "documentation": {}
+    },
+    {
+        "label": "aiohttp",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "aiohttp",
+        "description": "aiohttp",
+        "detail": "aiohttp",
+        "documentation": {}
+    },
+    {
+        "label": "AdminCog",
+        "kind": 6,
+        "importPath": "commands.admin",
+        "description": "commands.admin",
+        "peekOfCode": "class AdminCog(commands.Cog):\n    def __init__(self, bot):\n        self.bot = bot\n    @commands.command(name=\"boost\")\n    @commands.has_permissions(administrator=True)\n    async def boost(self, ctx, user: discord.Member, amount: int):\n        record_transaction(\n            str(user.id),\n            str(ctx.guild.id),\n            None,",
+        "detail": "commands.admin",
+        "documentation": {}
+    },
+    {
+        "label": "FunCog",
+        "kind": 6,
+        "importPath": "commands.fun",
+        "description": "commands.fun",
+        "peekOfCode": "class FunCog(commands.Cog):\n    def __init__(self, bot):\n        self.bot = bot\n    @commands.command(name=\"สาระโอเกะ\")\n    async def random_lyric(self, ctx):\n        lyrics = [\n            \"ใจมันได้! สายปั่นต้องสู้!\",\n            \"หมุนต่อไม่รอแล้วนะ!\",\n            \"สล็อตแตกง่าย ใครไม่ลองถือว่าพลาด!\",\n            \"ขอกำลังใจหน่อย จะหมุนแล้ว!\",",
+        "detail": "commands.fun",
+        "documentation": {}
+    },
+    {
+        "label": "LoanCog",
+        "kind": 6,
+        "importPath": "commands.loan",
+        "description": "commands.loan",
+        "peekOfCode": "class LoanCog(commands.Cog):\n    def __init__(self, bot):\n        self.bot = bot\n    @commands.command(name=\"เบิก\")\n    async def request_loan(self, ctx, amount: int):\n        import random\n        user_id = str(ctx.author.id)\n        guild_id = str(ctx.guild.id)\n<<<<<<< Updated upstream\n        if is_borrow_spammer(user_id):",
+        "detail": "commands.loan",
+        "documentation": {}
+    },
+    {
+        "label": "is_borrow_spammer",
+        "kind": 2,
+        "importPath": "commands.loan",
+        "description": "commands.loan",
+        "peekOfCode": "def is_borrow_spammer(user_id):\n    now = datetime.now(datetime.timezone.utc)\n    borrow_log[user_id] = [\n        t for t in borrow_log[user_id] if now - t < timedelta(minutes=30)\n    ]\n    borrow_log[user_id].append(now)\n    return len(borrow_log[user_id]) > 3\n=======\nimport discord\nfrom discord.ext import commands",
+        "detail": "commands.loan",
+        "documentation": {}
+    },
+    {
+        "label": "borrow_log",
+        "kind": 5,
+        "importPath": "commands.loan",
+        "description": "commands.loan",
+        "peekOfCode": "borrow_log = defaultdict(list)\nADMIN_ID = \"767982567604879371\"\ndef is_borrow_spammer(user_id):\n    now = datetime.now(datetime.timezone.utc)\n    borrow_log[user_id] = [\n        t for t in borrow_log[user_id] if now - t < timedelta(minutes=30)\n    ]\n    borrow_log[user_id].append(now)\n    return len(borrow_log[user_id]) > 3\n=======",
+        "detail": "commands.loan",
+        "documentation": {}
+    },
+    {
+        "label": "ADMIN_ID",
+        "kind": 5,
+        "importPath": "commands.loan",
+        "description": "commands.loan",
+        "peekOfCode": "ADMIN_ID = \"767982567604879371\"\ndef is_borrow_spammer(user_id):\n    now = datetime.now(datetime.timezone.utc)\n    borrow_log[user_id] = [\n        t for t in borrow_log[user_id] if now - t < timedelta(minutes=30)\n    ]\n    borrow_log[user_id].append(now)\n    return len(borrow_log[user_id]) > 3\n=======\nimport discord",
+        "detail": "commands.loan",
+        "documentation": {}
+    },
+    {
+        "label": "ProfileCog",
+        "kind": 6,
+        "importPath": "commands.profile",
+        "description": "commands.profile",
+        "peekOfCode": "class ProfileCog(commands.Cog):\n    def __init__(self, bot):\n        self.bot = bot  # เก็บ instance ของบอทไว้ใช้งานในคำสั่งต่าง ๆ\n    @commands.command(name=\"ชื่อผู้ใช้\")\n    async def set_user_name(self, ctx, *, name: str):\n        # ดึง ID ของผู้ใช้และเซิร์ฟเวอร์จาก context\n        user_id = str(ctx.author.id)\n        guild_id = str(ctx.guild.id)\n        # บันทึกชื่อผู้ใช้ใหม่ในฐานข้อมูล\n        set_display_name(user_id, guild_id, name)",
+        "detail": "commands.profile",
+        "documentation": {}
+    },
+    {
+        "label": "ProfileCog",
+        "kind": 6,
+        "importPath": "commands.profile",
+        "description": "commands.profile",
+        "peekOfCode": "class ProfileCog(commands.Cog):\n    def __init__(self, bot):\n        self.bot = bot\n    @commands.command(name=\"ชื่อฉลาม\")\n    async def set_shark_name(self, ctx, *, name: str):\n        user_id = str(ctx.author.id)\n        guild_id = str(ctx.guild.id)\n        set_display_name(user_id, guild_id, name)\n        await ctx.send(f\"เปลี่ยนชื่อฉลามของคุณเป็น {name} เรียบร้อย!\")\n    @commands.command(name=\"status\")",
+        "detail": "commands.profile",
+        "documentation": {}
+    },
+    {
+        "label": "TransferCog",
+        "kind": 6,
+        "importPath": "commands.transfer",
+        "description": "commands.transfer",
+        "peekOfCode": "class TransferCog(commands.Cog):\n    def __init__(self, bot):\n        self.bot = bot\n    @commands.command(name=\"โอน\")\n    async def transfer(self, ctx, user: discord.Member, amount: int):\n        sender_id = str(ctx.author.id)\n        receiver_id = str(user.id)\n        guild_id = str(ctx.guild.id)\n        # บันทึกธุรกรรมแบบ pending\n        record_transaction(sender_id, guild_id, None, \"request_transfer\", amount, 0)",
+        "detail": "commands.transfer",
+        "documentation": {}
+    },
+    {
+        "label": "save_last_msg",
+        "kind": 2,
+        "importPath": "bot",
+        "description": "bot",
+        "peekOfCode": "def save_last_msg():\n    with open(LAST_MSG_FILE, \"w\") as f:\n        json.dump({str(k): v.isoformat() for k, v in last_msg.items()}, f)\ndef load_last_msg():\n    global last_msg\n    try:\n        with open(LAST_MSG_FILE, \"r\") as f:\n            last_msg = {\n                int(k): datetime.datetime.fromisoformat(v)\n                for k, v in json.load(f).items()",
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "load_last_msg",
+        "kind": 2,
+        "importPath": "bot",
+        "description": "bot",
+        "peekOfCode": "def load_last_msg():\n    global last_msg\n    try:\n        with open(LAST_MSG_FILE, \"r\") as f:\n            last_msg = {\n                int(k): datetime.datetime.fromisoformat(v)\n                for k, v in json.load(f).items()\n            }\n    except (FileNotFoundError, json.JSONDecodeError):\n        print(\"Warning: Could not load last message data. Starting fresh.\")",
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "run_fastapi",
+        "kind": 2,
+        "importPath": "bot",
+        "description": "bot",
+        "peekOfCode": "def run_fastapi():\n    import uvicorn\n    uvicorn.run(fastapi_app, host=\"0.0.0.0\", port=8000)\nif __name__ == \"__main__\":\n    try:\n        print(f\"TOKEN: {TOKEN[:10]}... (length: {len(TOKEN) if TOKEN else 0})\")\n        # run bot + fastapi together\n        Thread(target=run_fastapi, daemon=True).start()\n        asyncio.run(main())\n    except Exception as e:",
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "TOKEN",
+        "kind": 5,
+        "importPath": "bot",
+        "description": "bot",
+        "peekOfCode": "TOKEN = os.getenv(\"DISCORD_TOKEN\")\nMAIN_CHANNEL_ID = int(os.getenv(\"MAIN_CHANNEL_ID\", \"0\"))\nLAST_MSG_FILE = \"data/last_msg.json\"\nAPI_KEY = os.getenv(\"TOGETHER_API_KEY\", \"\")\nMODEL = os.getenv(\"TOGETHER_MODEL\", \"mistralai/Mistral-7B-Instruct-v0.2\")\nif not API_KEY:\n    raise ValueError(\"❌ TOGETHER_API_KEY not found in .env\")\n# เตรียม intents\nintents = discord.Intents.default()\nintents.message_content = True",
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "MAIN_CHANNEL_ID",
+        "kind": 5,
+        "importPath": "bot",
+        "description": "bot",
+        "peekOfCode": "MAIN_CHANNEL_ID = int(os.getenv(\"MAIN_CHANNEL_ID\", \"0\"))\nLAST_MSG_FILE = \"data/last_msg.json\"\nAPI_KEY = os.getenv(\"TOGETHER_API_KEY\", \"\")\nMODEL = os.getenv(\"TOGETHER_MODEL\", \"mistralai/Mistral-7B-Instruct-v0.2\")\nif not API_KEY:\n    raise ValueError(\"❌ TOGETHER_API_KEY not found in .env\")\n# เตรียม intents\nintents = discord.Intents.default()\nintents.message_content = True\nbot = commands.Bot(command_prefix=\"!\", intents=intents)",
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "LAST_MSG_FILE",
+        "kind": 5,
+        "importPath": "bot",
+        "description": "bot",
+        "peekOfCode": "LAST_MSG_FILE = \"data/last_msg.json\"\nAPI_KEY = os.getenv(\"TOGETHER_API_KEY\", \"\")\nMODEL = os.getenv(\"TOGETHER_MODEL\", \"mistralai/Mistral-7B-Instruct-v0.2\")\nif not API_KEY:\n    raise ValueError(\"❌ TOGETHER_API_KEY not found in .env\")\n# เตรียม intents\nintents = discord.Intents.default()\nintents.message_content = True\nbot = commands.Bot(command_prefix=\"!\", intents=intents)\n# ดึงไฟล์คำสั่งทั้งหมดใน /commands",
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "API_KEY",
+        "kind": 5,
+        "importPath": "bot",
+        "description": "bot",
+        "peekOfCode": "API_KEY = os.getenv(\"TOGETHER_API_KEY\", \"\")\nMODEL = os.getenv(\"TOGETHER_MODEL\", \"mistralai/Mistral-7B-Instruct-v0.2\")\nif not API_KEY:\n    raise ValueError(\"❌ TOGETHER_API_KEY not found in .env\")\n# เตรียม intents\nintents = discord.Intents.default()\nintents.message_content = True\nbot = commands.Bot(command_prefix=\"!\", intents=intents)\n# ดึงไฟล์คำสั่งทั้งหมดใน /commands\nimport pathlib",
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "MODEL",
+        "kind": 5,
+        "importPath": "bot",
+        "description": "bot",
+        "peekOfCode": "MODEL = os.getenv(\"TOGETHER_MODEL\", \"mistralai/Mistral-7B-Instruct-v0.2\")\nif not API_KEY:\n    raise ValueError(\"❌ TOGETHER_API_KEY not found in .env\")\n# เตรียม intents\nintents = discord.Intents.default()\nintents.message_content = True\nbot = commands.Bot(command_prefix=\"!\", intents=intents)\n# ดึงไฟล์คำสั่งทั้งหมดใน /commands\nimport pathlib\nasync def load_extensions() -> None:",
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "intents",
+        "kind": 5,
+        "importPath": "bot",
+        "description": "bot",
+        "peekOfCode": "intents = discord.Intents.default()\nintents.message_content = True\nbot = commands.Bot(command_prefix=\"!\", intents=intents)\n# ดึงไฟล์คำสั่งทั้งหมดใน /commands\nimport pathlib\nasync def load_extensions() -> None:\n    \"\"\"\n    Loads all extension modules in the \"commands/\" directory.\n    This function goes through all Python files in the \"commands/\" directory,\n    loads them as extension modules, and prints a message to the console",
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "intents.message_content",
+        "kind": 5,
+        "importPath": "bot",
+        "description": "bot",
+        "peekOfCode": "intents.message_content = True\nbot = commands.Bot(command_prefix=\"!\", intents=intents)\n# ดึงไฟล์คำสั่งทั้งหมดใน /commands\nimport pathlib\nasync def load_extensions() -> None:\n    \"\"\"\n    Loads all extension modules in the \"commands/\" directory.\n    This function goes through all Python files in the \"commands/\" directory,\n    loads them as extension modules, and prints a message to the console\n    indicating whether the loading was successful or not.",
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "bot",
+        "kind": 5,
+        "importPath": "bot",
+        "description": "bot",
+        "peekOfCode": "bot = commands.Bot(command_prefix=\"!\", intents=intents)\n# ดึงไฟล์คำสั่งทั้งหมดใน /commands\nimport pathlib\nasync def load_extensions() -> None:\n    \"\"\"\n    Loads all extension modules in the \"commands/\" directory.\n    This function goes through all Python files in the \"commands/\" directory,\n    loads them as extension modules, and prints a message to the console\n    indicating whether the loading was successful or not.\n    If an extension cannot be loaded, the error message is printed to the console.",
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "last_msg",
+        "kind": 5,
+        "importPath": "bot",
+        "description": "bot",
+        "peekOfCode": "last_msg = {}\ndef save_last_msg():\n    with open(LAST_MSG_FILE, \"w\") as f:\n        json.dump({str(k): v.isoformat() for k, v in last_msg.items()}, f)\ndef load_last_msg():\n    global last_msg\n    try:\n        with open(LAST_MSG_FILE, \"r\") as f:\n            last_msg = {\n                int(k): datetime.datetime.fromisoformat(v)",
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "lyrics",
+        "kind": 5,
+        "importPath": "bot",
+        "description": "bot",
+        "peekOfCode": "lyrics = [\n    \"ใจมันได้! สายปั่นต้องสู้!\",\n    \"หมุนต่อไม่รอแล้วนะ!\",\n    \"สล็อตแตกง่าย ใครไม่ลองถือว่าพลาด!\",\n    \"ขอกำลังใจหน่อย จะหมุนแล้ว!\",\n    \"ถ้าแตกวันนี้ จะไปวิ่งรอบบ้าน!\",\n    \"บอทสายปั่นขอแจ้งเตือน: อย่าลืมเติมน้ำก่อนหมุน!\",\n    \"ถ้าปั่นไม่แตก ลองเปลี่ยนมือหมุนดูมั้ย?\",\n    \"สูตรลับสายปั่น: ใส่ถุงเท้าก่อนเล่น เพิ่มโชค!\",\n    \"บอทยังฮาไม่เท่าเจ้าของเพจ x.com/Omgnhoy นะ!\",",
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "fastapi_app",
+        "kind": 5,
+        "importPath": "bot",
+        "description": "bot",
+        "peekOfCode": "fastapi_app = FastAPI()\n@fastapi_app.post(\"/chat\")\nasync def chat(request: Request):\n    data = await request.json()\n    message = data.get(\"message\", \"\")\n    headers = {\"Authorization\": f\"Bearer {API_KEY}\", \"Content-Type\": \"application/json\"}\n    payload = {\n        \"model\": MODEL,\n        \"messages\": [\n            {",
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "INTEREST_RATE",
+        "kind": 5,
+        "importPath": "constants",
+        "description": "constants",
+        "peekOfCode": "INTEREST_RATE = 0.10\n# Cooldown (นาที)\nREQUEST_COOLDOWN_MINUTES = 10\n# วงเงินเริ่มต้น\nDEFAULT_CREDIT_LIMIT = 20\n# วงเงินขั้นต่ำ\nMIN_CREDIT_LIMIT = 10\n# จำนวนชั่วโมงที่ถือว่า defaulted\nDEFAULTED_HOURS = 24\n# Role admin",
+        "detail": "constants",
+        "documentation": {}
+    },
+    {
+        "label": "REQUEST_COOLDOWN_MINUTES",
+        "kind": 5,
+        "importPath": "constants",
+        "description": "constants",
+        "peekOfCode": "REQUEST_COOLDOWN_MINUTES = 10\n# วงเงินเริ่มต้น\nDEFAULT_CREDIT_LIMIT = 20\n# วงเงินขั้นต่ำ\nMIN_CREDIT_LIMIT = 10\n# จำนวนชั่วโมงที่ถือว่า defaulted\nDEFAULTED_HOURS = 24\n# Role admin\nADMIN_ROLE_NAME = \"admin\"\n# Guild field name (ถ้ารองรับ multiguild)",
+        "detail": "constants",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_CREDIT_LIMIT",
+        "kind": 5,
+        "importPath": "constants",
+        "description": "constants",
+        "peekOfCode": "DEFAULT_CREDIT_LIMIT = 20\n# วงเงินขั้นต่ำ\nMIN_CREDIT_LIMIT = 10\n# จำนวนชั่วโมงที่ถือว่า defaulted\nDEFAULTED_HOURS = 24\n# Role admin\nADMIN_ROLE_NAME = \"admin\"\n# Guild field name (ถ้ารองรับ multiguild)\nGUILD_FIELD = \"guild_id\"",
+        "detail": "constants",
+        "documentation": {}
+    },
+    {
+        "label": "MIN_CREDIT_LIMIT",
+        "kind": 5,
+        "importPath": "constants",
+        "description": "constants",
+        "peekOfCode": "MIN_CREDIT_LIMIT = 10\n# จำนวนชั่วโมงที่ถือว่า defaulted\nDEFAULTED_HOURS = 24\n# Role admin\nADMIN_ROLE_NAME = \"admin\"\n# Guild field name (ถ้ารองรับ multiguild)\nGUILD_FIELD = \"guild_id\"",
+        "detail": "constants",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULTED_HOURS",
+        "kind": 5,
+        "importPath": "constants",
+        "description": "constants",
+        "peekOfCode": "DEFAULTED_HOURS = 24\n# Role admin\nADMIN_ROLE_NAME = \"admin\"\n# Guild field name (ถ้ารองรับ multiguild)\nGUILD_FIELD = \"guild_id\"",
+        "detail": "constants",
+        "documentation": {}
+    },
+    {
+        "label": "ADMIN_ROLE_NAME",
+        "kind": 5,
+        "importPath": "constants",
+        "description": "constants",
+        "peekOfCode": "ADMIN_ROLE_NAME = \"admin\"\n# Guild field name (ถ้ารองรับ multiguild)\nGUILD_FIELD = \"guild_id\"",
+        "detail": "constants",
+        "documentation": {}
+    },
+    {
+        "label": "GUILD_FIELD",
+        "kind": 5,
+        "importPath": "constants",
+        "description": "constants",
+        "peekOfCode": "GUILD_FIELD = \"guild_id\"",
+        "detail": "constants",
+        "documentation": {}
+    },
+    {
+        "label": "get_user",
+        "kind": 2,
+        "importPath": "db",
+        "description": "db",
+        "peekOfCode": "def get_user(user_id, guild_id):\n    return sb_get_user(user_id, guild_id)\ndef set_display_name(user_id, guild_id, display_name):\n    # ใช้ update_user ของ supabase_helpers\n    from supabase_helpers import update_user\n    return update_user(user_id, guild_id, display_name=display_name)\n# --- Loan functions ---\ndef create_loan(user_id, guild_id, amount):\n    # คืน loan id (หรือ object) จาก supabase\n    result = sb_add_loan(user_id, guild_id, amount)",
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "set_display_name",
+        "kind": 2,
+        "importPath": "db",
+        "description": "db",
+        "peekOfCode": "def set_display_name(user_id, guild_id, display_name):\n    # ใช้ update_user ของ supabase_helpers\n    from supabase_helpers import update_user\n    return update_user(user_id, guild_id, display_name=display_name)\n# --- Loan functions ---\ndef create_loan(user_id, guild_id, amount):\n    # คืน loan id (หรือ object) จาก supabase\n    result = sb_add_loan(user_id, guild_id, amount)\n    if result and isinstance(result, list) and len(result) > 0:\n        return result[0].get('id')",
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "create_loan",
+        "kind": 2,
+        "importPath": "db",
+        "description": "db",
+        "peekOfCode": "def create_loan(user_id, guild_id, amount):\n    # คืน loan id (หรือ object) จาก supabase\n    result = sb_add_loan(user_id, guild_id, amount)\n    if result and isinstance(result, list) and len(result) > 0:\n        return result[0].get('id')\n    return None\ndef approve_loan(loan_id, admin_id):\n    # อัปเดต loan เป็น approved\n    return sb_update_loan(loan_id, status='approved', admin_id=admin_id)\n# --- Transaction functions ---",
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "approve_loan",
+        "kind": 2,
+        "importPath": "db",
+        "description": "db",
+        "peekOfCode": "def approve_loan(loan_id, admin_id):\n    # อัปเดต loan เป็น approved\n    return sb_update_loan(loan_id, status='approved', admin_id=admin_id)\n# --- Transaction functions ---\ndef record_transaction(user_id, guild_id, loan_id, action, amount, interest, admin_id=None):\n    return sb_add_transaction(user_id, guild_id, loan_id, action, amount, interest, admin_id)",
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "record_transaction",
+        "kind": 2,
+        "importPath": "db",
+        "description": "db",
+        "peekOfCode": "def record_transaction(user_id, guild_id, loan_id, action, amount, interest, admin_id=None):\n    return sb_add_transaction(user_id, guild_id, loan_id, action, amount, interest, admin_id)",
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "SUPABASE_URL",
+        "kind": 5,
+        "importPath": "supabase_client",
+        "description": "supabase_client",
+        "peekOfCode": "SUPABASE_URL = os.getenv(\"SUPABASE_URL\")\nSUPABASE_KEY = os.getenv(\"SUPABASE_KEY\")\nsb = create_client(SUPABASE_URL, SUPABASE_KEY)\n# ========================\n# USERS\n# ========================\n# (คัดลอกฟังก์ชัน/โค้ดทั้งหมดจาก supabase.py เดิมมาที่นี่)",
+        "detail": "supabase_client",
+        "documentation": {}
+    },
+    {
+        "label": "SUPABASE_KEY",
+        "kind": 5,
+        "importPath": "supabase_client",
+        "description": "supabase_client",
+        "peekOfCode": "SUPABASE_KEY = os.getenv(\"SUPABASE_KEY\")\nsb = create_client(SUPABASE_URL, SUPABASE_KEY)\n# ========================\n# USERS\n# ========================\n# (คัดลอกฟังก์ชัน/โค้ดทั้งหมดจาก supabase.py เดิมมาที่นี่)",
+        "detail": "supabase_client",
+        "documentation": {}
+    },
+    {
+        "label": "sb",
+        "kind": 5,
+        "importPath": "supabase_client",
+        "description": "supabase_client",
+        "peekOfCode": "sb = create_client(SUPABASE_URL, SUPABASE_KEY)\n# ========================\n# USERS\n# ========================\n# (คัดลอกฟังก์ชัน/โค้ดทั้งหมดจาก supabase.py เดิมมาที่นี่)",
+        "detail": "supabase_client",
+        "documentation": {}
+    },
+    {
+        "label": "get_user",
+        "kind": 2,
+        "importPath": "supabase_helpers",
+        "description": "supabase_helpers",
+        "peekOfCode": "def get_user(user_id, guild_id):\n    \"\"\"ดึงข้อมูล user ตาม user_id และ guild_id\"\"\"\n    try:\n        res = sb.table(\"users\").select(\"*\").eq(\"user_id\", user_id).eq(\"guild_id\", guild_id).single().execute()\n        return res.data\n    except Exception as e:\n        print(f\"[Supabase] get_user error: {e}\")\n        return None\ndef add_user(user_id, guild_id, display_name=None, credit_limit=20):\n    \"\"\"เพิ่ม user ใหม่\"\"\"",
+        "detail": "supabase_helpers",
+        "documentation": {}
+    },
+    {
+        "label": "add_user",
+        "kind": 2,
+        "importPath": "supabase_helpers",
+        "description": "supabase_helpers",
+        "peekOfCode": "def add_user(user_id, guild_id, display_name=None, credit_limit=20):\n    \"\"\"เพิ่ม user ใหม่\"\"\"\n    data = {\n        \"user_id\": user_id,\n        \"guild_id\": guild_id,\n        \"display_name\": display_name,\n        \"credit_limit\": credit_limit\n    }\n    try:\n        res = sb.table(\"users\").insert(data).execute()",
+        "detail": "supabase_helpers",
+        "documentation": {}
+    },
+    {
+        "label": "update_user",
+        "kind": 2,
+        "importPath": "supabase_helpers",
+        "description": "supabase_helpers",
+        "peekOfCode": "def update_user(user_id, guild_id, **fields):\n    \"\"\"อัปเดตข้อมูล user\"\"\"\n    try:\n        res = sb.table(\"users\").update(fields).eq(\"user_id\", user_id).eq(\"guild_id\", guild_id).execute()\n        return res.data\n    except Exception as e:\n        print(f\"[Supabase] update_user error: {e}\")\n        return None\n# ========================\n# LOANS",
+        "detail": "supabase_helpers",
+        "documentation": {}
+    },
+    {
+        "label": "add_loan",
+        "kind": 2,
+        "importPath": "supabase_helpers",
+        "description": "supabase_helpers",
+        "peekOfCode": "def add_loan(user_id, guild_id, amount, status=\"pending\", requested_at=None, approved_at=None, admin_id=None):\n    \"\"\"สร้างคำขอกู้ใหม่\"\"\"\n    data = {\n        \"user_id\": user_id,\n        \"guild_id\": guild_id,\n        \"amount\": amount,\n        \"status\": status,\n        \"requested_at\": requested_at,\n        \"approved_at\": approved_at,\n        \"admin_id\": admin_id",
+        "detail": "supabase_helpers",
+        "documentation": {}
+    },
+    {
+        "label": "get_loans_by_user",
+        "kind": 2,
+        "importPath": "supabase_helpers",
+        "description": "supabase_helpers",
+        "peekOfCode": "def get_loans_by_user(user_id, guild_id, status=None):\n    \"\"\"ดึง loan ของ user ใน guild นั้น ๆ (optionally filter by status)\"\"\"\n    q = sb.table(\"loans\").select(\"*\").eq(\"user_id\", user_id).eq(\"guild_id\", guild_id)\n    if status:\n        q = q.eq(\"status\", status)\n    try:\n        res = q.execute()\n        return res.data\n    except Exception as e:\n        print(f\"[Supabase] get_loans_by_user error: {e}\")",
+        "detail": "supabase_helpers",
+        "documentation": {}
+    },
+    {
+        "label": "update_loan",
+        "kind": 2,
+        "importPath": "supabase_helpers",
+        "description": "supabase_helpers",
+        "peekOfCode": "def update_loan(loan_id, **fields):\n    \"\"\"อัปเดตข้อมูล loan ตาม loan_id\"\"\"\n    try:\n        res = sb.table(\"loans\").update(fields).eq(\"id\", loan_id).execute()\n        return res.data\n    except Exception as e:\n        print(f\"[Supabase] update_loan error: {e}\")\n        return None\n# ========================\n# TRANSACTIONS",
+        "detail": "supabase_helpers",
+        "documentation": {}
+    },
+    {
+        "label": "add_transaction",
+        "kind": 2,
+        "importPath": "supabase_helpers",
+        "description": "supabase_helpers",
+        "peekOfCode": "def add_transaction(user_id, guild_id, loan_id, action, amount=None, interest=None, admin_id=None):\n    \"\"\"บันทึกธุรกรรม (เช่น request, approve, pay, interest, etc.)\"\"\"\n    data = {\n        \"user_id\": user_id,\n        \"guild_id\": guild_id,\n        \"loan_id\": loan_id,\n        \"action\": action,\n        \"amount\": amount,\n        \"interest\": interest,\n        \"admin_id\": admin_id",
+        "detail": "supabase_helpers",
+        "documentation": {}
+    },
+    {
+        "label": "get_transactions_by_user",
+        "kind": 2,
+        "importPath": "supabase_helpers",
+        "description": "supabase_helpers",
+        "peekOfCode": "def get_transactions_by_user(user_id, guild_id):\n    \"\"\"ดึงธุรกรรมทั้งหมดของ user\"\"\"\n    try:\n        res = sb.table(\"transactions\").select(\"*\").eq(\"user_id\", user_id).eq(\"guild_id\", guild_id).order(\"created_at\", desc=True).execute()\n        return res.data\n    except Exception as e:\n        print(f\"[Supabase] get_transactions_by_user error: {e}\")\n        return []",
+        "detail": "supabase_helpers",
+        "documentation": {}
+    },
+    {
+        "label": "SUPABASE_URL",
+        "kind": 5,
+        "importPath": "supabase_helpers",
+        "description": "supabase_helpers",
+        "peekOfCode": "SUPABASE_URL = os.getenv(\"SUPABASE_URL\")\nSUPABASE_KEY = os.getenv(\"SUPABASE_KEY\")\nsb = create_client(SUPABASE_URL, SUPABASE_KEY)\n# ========================\n# USERS\n# ========================\ndef get_user(user_id, guild_id):\n    \"\"\"ดึงข้อมูล user ตาม user_id และ guild_id\"\"\"\n    try:\n        res = sb.table(\"users\").select(\"*\").eq(\"user_id\", user_id).eq(\"guild_id\", guild_id).single().execute()",
+        "detail": "supabase_helpers",
+        "documentation": {}
+    },
+    {
+        "label": "SUPABASE_KEY",
+        "kind": 5,
+        "importPath": "supabase_helpers",
+        "description": "supabase_helpers",
+        "peekOfCode": "SUPABASE_KEY = os.getenv(\"SUPABASE_KEY\")\nsb = create_client(SUPABASE_URL, SUPABASE_KEY)\n# ========================\n# USERS\n# ========================\ndef get_user(user_id, guild_id):\n    \"\"\"ดึงข้อมูล user ตาม user_id และ guild_id\"\"\"\n    try:\n        res = sb.table(\"users\").select(\"*\").eq(\"user_id\", user_id).eq(\"guild_id\", guild_id).single().execute()\n        return res.data",
+        "detail": "supabase_helpers",
+        "documentation": {}
+    },
+    {
+        "label": "sb",
+        "kind": 5,
+        "importPath": "supabase_helpers",
+        "description": "supabase_helpers",
+        "peekOfCode": "sb = create_client(SUPABASE_URL, SUPABASE_KEY)\n# ========================\n# USERS\n# ========================\ndef get_user(user_id, guild_id):\n    \"\"\"ดึงข้อมูล user ตาม user_id และ guild_id\"\"\"\n    try:\n        res = sb.table(\"users\").select(\"*\").eq(\"user_id\", user_id).eq(\"guild_id\", guild_id).single().execute()\n        return res.data\n    except Exception as e:",
+        "detail": "supabase_helpers",
+        "documentation": {}
+    },
+    {
+        "label": "MyClient",
+        "kind": 6,
+        "importPath": "test_bot",
+        "description": "test_bot",
+        "peekOfCode": "class MyClient(discord.Client):\n    async def on_ready(self):\n        print(\"\\n\" + \"=\"*50)\n        print(f'Logged in as {self.user} (ID: {self.user.id})')\n        print(f'Connected to {len(self.guilds)} guild(s):')\n        for guild in self.guilds:\n            print(f'- {guild.name} (ID: {guild.id})')\n        print(\"=\"*50 + \"\\n\")\n    async def on_error(self, event, *args, **kwargs):\n        import traceback",
+        "detail": "test_bot",
+        "documentation": {}
+    },
+    {
+        "label": "env_path",
+        "kind": 5,
+        "importPath": "test_bot",
+        "description": "test_bot",
+        "peekOfCode": "env_path = os.path.join(os.path.dirname(__file__), '.env')\nprint(f\"Loading .env from: {env_path}\")\nload_dotenv(env_path)\n# Get token and validate\nTOKEN = os.getenv(\"DISCORD_TOKEN\")\nif not TOKEN:\n    print(\"[ERROR] DISCORD_TOKEN not found in .env file!\")\n    sys.exit(1)\n# Clean token (remove quotes and whitespace)\nTOKEN = TOKEN.strip('\"\\'').strip()",
+        "detail": "test_bot",
+        "documentation": {}
+    },
+    {
+        "label": "TOKEN",
+        "kind": 5,
+        "importPath": "test_bot",
+        "description": "test_bot",
+        "peekOfCode": "TOKEN = os.getenv(\"DISCORD_TOKEN\")\nif not TOKEN:\n    print(\"[ERROR] DISCORD_TOKEN not found in .env file!\")\n    sys.exit(1)\n# Clean token (remove quotes and whitespace)\nTOKEN = TOKEN.strip('\"\\'').strip()\nprint(f\"Token found: {TOKEN[:5]}...{TOKEN[-5:]}\")\nprint(f\"Token length: {len(TOKEN)} characters\")\n# Verify token format\nif not (len(TOKEN) in [59, 70, 71, 72] and TOKEN.count('.') == 1):",
+        "detail": "test_bot",
+        "documentation": {}
+    },
+    {
+        "label": "TOKEN",
+        "kind": 5,
+        "importPath": "test_bot",
+        "description": "test_bot",
+        "peekOfCode": "TOKEN = TOKEN.strip('\"\\'').strip()\nprint(f\"Token found: {TOKEN[:5]}...{TOKEN[-5:]}\")\nprint(f\"Token length: {len(TOKEN)} characters\")\n# Verify token format\nif not (len(TOKEN) in [59, 70, 71, 72] and TOKEN.count('.') == 1):\n    print(\"[WARNING] Token format doesn't match expected Discord bot token format!\")\n# Initialize bot with all intents\nintents = discord.Intents.default()\nintents.message_content = True  # Enable message content intent\nclass MyClient(discord.Client):",
+        "detail": "test_bot",
+        "documentation": {}
+    },
+    {
+        "label": "intents",
+        "kind": 5,
+        "importPath": "test_bot",
+        "description": "test_bot",
+        "peekOfCode": "intents = discord.Intents.default()\nintents.message_content = True  # Enable message content intent\nclass MyClient(discord.Client):\n    async def on_ready(self):\n        print(\"\\n\" + \"=\"*50)\n        print(f'Logged in as {self.user} (ID: {self.user.id})')\n        print(f'Connected to {len(self.guilds)} guild(s):')\n        for guild in self.guilds:\n            print(f'- {guild.name} (ID: {guild.id})')\n        print(\"=\"*50 + \"\\n\")",
+        "detail": "test_bot",
+        "documentation": {}
+    },
+    {
+        "label": "intents.message_content",
+        "kind": 5,
+        "importPath": "test_bot",
+        "description": "test_bot",
+        "peekOfCode": "intents.message_content = True  # Enable message content intent\nclass MyClient(discord.Client):\n    async def on_ready(self):\n        print(\"\\n\" + \"=\"*50)\n        print(f'Logged in as {self.user} (ID: {self.user.id})')\n        print(f'Connected to {len(self.guilds)} guild(s):')\n        for guild in self.guilds:\n            print(f'- {guild.name} (ID: {guild.id})')\n        print(\"=\"*50 + \"\\n\")\n    async def on_error(self, event, *args, **kwargs):",
+        "detail": "test_bot",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "test_bot",
+        "description": "test_bot",
+        "peekOfCode": "client = MyClient(intents=intents)\nif __name__ == \"__main__\":\n    try:\n        # First verify the token works with direct API call\n        print(\"\\n🔍 Verifying token with Discord API...\")\n        token_valid = asyncio.get_event_loop().run_until_complete(verify_token(TOKEN))\n        if not token_valid:\n            print(\"\\n❌ Cannot connect with invalid token. Please check your token and try again.\")\n            print(\"Make sure to:\")\n            print(\"1. Copy the token correctly (no extra spaces or characters)\")",
+        "detail": "test_bot",
+        "documentation": {}
+    },
+    {
+        "label": "load_json",
+        "kind": 2,
+        "importPath": "utils",
+        "description": "utils",
+        "peekOfCode": "def load_json(filepath, default=None):\n    try:\n        with open(filepath, 'r', encoding='utf-8') as f:\n            return json.load(f)\n    except (FileNotFoundError, json.JSONDecodeError):\n        return default if default is not None else {}\n# ฟังก์ชันบันทึกไฟล์ JSON\ndef save_json(filepath, data):\n    with open(filepath, 'w', encoding='utf-8') as f:\n        json.dump(data, f, ensure_ascii=False, indent=2)",
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "save_json",
+        "kind": 2,
+        "importPath": "utils",
+        "description": "utils",
+        "peekOfCode": "def save_json(filepath, data):\n    with open(filepath, 'w', encoding='utf-8') as f:\n        json.dump(data, f, ensure_ascii=False, indent=2)\n# ฟังก์ชันแปลง timestamp เป็น string\ndef now_iso():\n    return datetime.now().isoformat()\n# ฟังก์ชันคำนวณเวลาห่าง (นาที)\ndef minutes_since(iso_str):\n    t = datetime.fromisoformat(iso_str)\n    return (datetime.now() - t).total_seconds() / 60",
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "now_iso",
+        "kind": 2,
+        "importPath": "utils",
+        "description": "utils",
+        "peekOfCode": "def now_iso():\n    return datetime.now().isoformat()\n# ฟังก์ชันคำนวณเวลาห่าง (นาที)\ndef minutes_since(iso_str):\n    t = datetime.fromisoformat(iso_str)\n    return (datetime.now() - t).total_seconds() / 60\n# ฟังก์ชัน validate user id\ndef is_valid_user_id(user_id):\n    return isinstance(user_id, str) and user_id.isdigit()",
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "minutes_since",
+        "kind": 2,
+        "importPath": "utils",
+        "description": "utils",
+        "peekOfCode": "def minutes_since(iso_str):\n    t = datetime.fromisoformat(iso_str)\n    return (datetime.now() - t).total_seconds() / 60\n# ฟังก์ชัน validate user id\ndef is_valid_user_id(user_id):\n    return isinstance(user_id, str) and user_id.isdigit()",
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "is_valid_user_id",
+        "kind": 2,
+        "importPath": "utils",
+        "description": "utils",
+        "peekOfCode": "def is_valid_user_id(user_id):\n    return isinstance(user_id, str) and user_id.isdigit()",
+        "detail": "utils",
+        "documentation": {}
+    }
+]
