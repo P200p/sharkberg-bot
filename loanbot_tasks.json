@@ -1,0 +1,73 @@
+[
+  {
+    "task": "Refactor loan_commands.py ให้ใช้ supabase.py, utils.py, constants.py",
+    "subtasks": [
+      "เปลี่ยน logic !เบิก ให้ใช้ add_loan, add_transaction",
+      "เช็ค cooldown ด้วย utils.py",
+      "ตอบกลับแนวปั่น omgnhoy",
+      "รองรับ multiguild (guild_id)"
+    ]
+  },
+  {
+    "task": "เพิ่มฟีเจอร์ !ชำระ (จ่ายคืน + คำนวณดอกเบี้ย)",
+    "subtasks": [
+      "ดึง loan ที่ยังไม่จ่าย",
+      "คำนวณดอกเบี้ยตามเวลาจริง",
+      "update loan status เป็น paid",
+      "log transaction",
+      "ตอบกลับแนวปั่น omgnhoy"
+    ]
+  },
+  {
+    "task": "ระบบแจ้งเตือนอัตโนมัติ",
+    "subtasks": [
+      "background task ตรวจ loan ค้าง",
+      "DM/@ เตือน user ทุก 1 ชม.",
+      "สุ่มสำนวนปั่น"
+    ]
+  },
+  {
+    "task": "ระบบ admin",
+    "subtasks": [
+      "!เพิ่มวงเงิน @user (manual override)",
+      "!ตั้งค่าวงเงินขั้นต่ำ (config)",
+      "!บล็อก user (ban จากระบบเบิก)",
+      "ตรวจสอบสิทธิ์ admin ก่อนใช้คำสั่ง"
+    ]
+  },
+  {
+    "task": "Supabase Integration",
+    "subtasks": [
+      "สร้าง/แก้ไข schema users, loans, transactions",
+      "เขียน SQL migration และ policy",
+      "ฟังก์ชัน CRUD ใน supabase.py",
+      "แยก staging/prod DB จาก config"
+    ]
+  },
+  {
+    "task": "UX & Personality",
+    "subtasks": [
+      "ตอบกลับแนวปั่น omgnhoy ทุกคำสั่ง",
+      "สุ่มมุก/DM/ข้อความแซว",
+      "error message friendly"
+    ]
+  },
+  {
+    "task": "Deploy & Production",
+    "subtasks": [
+      "เตรียม requirements.txt, Procfile, README",
+      "รองรับ Railway deploy",
+      "รองรับ run local (python bot.py)"
+    ]
+  },
+  {
+    "task": "Git Flow สายฮา (bonus)",
+    "subtasks": [
+      "git อีกนิด: เริ่มต้นโปรเจกต์ (git init)",
+      "git statด: ดูสถานะไฟล์ที่แก้ (git status)",
+      "git ขี้๊ดดดด: เพิ่มไฟล์เข้าคิว (git add .)",
+      "git ขมิม: commit ไฟล์ (git commit -m '...')",
+      "git pooooodปู้ด: ดันขึ้นสวรรค์ (git push)"
+    ]
+  }
+]

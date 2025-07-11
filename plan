@@ -1,0 +1,78 @@
+สรุปเป้าหมายและโครงสร้างหลัก
+บอท Discord สำหรับชุมชนเล่นสล็อตออนไลน์
+ตอบโต้แบบปั่น/กวน/ตลก + มีระบบ SharkLoan (เงินกู้/เครดิต)
+เก็บข้อมูลธุรกรรมและประวัติในฐานข้อมูล (Supabase SQL)
+ระบบ queue อนุมัติ/ปฏิเสธเงินกู้แบบ manual โดยแอดมิน
+รองรับคำสั่งกลุ่มเงินกู้, wallet, โปรไฟล์, admin, มุก/ปั่น
+2. โครงสร้างไฟล์และโมดูลหลัก
+constants.py
+ : config อัตราดอกเบี้ย ฯลฯ
+create_supabase_schema.sql
+ : สร้างตาราง users, loans, transactions
+create_credit_limits.sql
+ : สร้าง/เซ็ต credit limit
+(ใหม่) 
+bot.py
+ : logic หลักของ Discord Bot
+(ใหม่) db.py : ฟังก์ชันติดต่อฐานข้อมูล
+(ใหม่) commands/ : แยก handler ของแต่ละกลุ่มคำสั่ง
+.env
+ : เก็บ TOKEN และ config สำคัญ
+3. Design: Command Mapping (แบ่งกลุ่มและฟังก์ชัน)
+กลุ่ม: เงินกู้ / SharkLoan
+คำสั่ง	ฟังก์ชัน/DB	อธิบาย
+!เบิก [จำนวน]	create loan (loans)	ขอวงเงินกู้, insert queue
+!ดอก	calc interest (loans, constants)	ดูดอกเบี้ย, ยอดที่ต้องคืน
+!คืน [จำนวน]	pay loan (transactions)	ชำระเงิน, อัปเดต loan
+!ประวัติ	get history (transactions)	ดูรายการกู้-คืนย้อนหลัง
+!แง้ม	check credit (users)	เช็กวงเงินกู้สูงสุด
+!หลามรอด / !หลามดาก	approve/reject loan (admin)	อนุมัติ/ปฏิเสธ queue
+กลุ่ม: โอน SharkCredit (Manual)
+คำสั่ง	ฟังก์ชัน/DB	อธิบาย
+!โอน @user [จำนวน]	request transfer (transactions)	ขอโอน SharkCredit (รอแอดมินกดปุ่มอนุมัติ)
+(แอดมินกดปุ่ม Approve/Reject ใน Discord)
+*ทุกธุรกรรมบอทจะบันทึกและแสดงผลในแชแนล*
+กลุ่ม: โปรไฟล์ / ความสัมพันธ์
+คำสั่ง	ฟังก์ชัน/DB	อธิบาย
+!ชื่อฉลาม [ชื่อใหม่]	set display_name (users)	ตั้งชื่อในระบบ
+!status	get status (users)	ดูสถานะ SharkUser
+!โปรไฟล์	link profile	ลิงก์บัญชี sharkcial/phark
+!bio	set bio (users)	ตั้ง bio
+กลุ่ม: ระบบ/ผู้ดูแล / แอดมิน
+คำสั่ง	ฟังก์ชัน/DB	อธิบาย
+!boost @user	boost credit (admin)	เพิ่มเครดิต
+!ban @user	block user (users)	ระงับบัญชี
+!reset @user	reset user (users)	รีเซ็ตสถานะ
+!forcepay @user	force pay (admin)	ตัดเครดิต/ยึด
+!ล้างหนี้ @user	clear loans (admin)	ลบหนี้ทั้งหมด
+กลุ่ม: ปั่น/มุก/สร้างความคึกคัก
+คำสั่ง	ฟังก์ชัน/DB	อธิบาย
+!สาระโอเกะ	random lyric	ร้องเพลงปลุกใจ
+!สุ่ม	random user	เลือก user สุ่ม
+!เตือน	random warn	ส่งมุกเตือนแรงๆ
+!บ่น	random rant	บ่นปั่นแทนแอดมิน
+4. Database Design (ตาม SQL ที่ให้)
+ตาราง users: user_id, guild_id, display_name, credit_limit, is_blocked, created_at, updated_at
+ตาราง loans: user_id, guild_id, amount, status, interest_accrued, admin_id, etc.
+ตาราง transactions: user_id, guild_id, loan_id, action, amount, interest, admin_id, created_at
+รองรับ queue, manual approval, ประวัติธุรกรรม
+5. Workflow หลักของบอท
+รับคำสั่งจาก Discord → ตรวจสอบ/validate → เขียน/อ่าน DB
+บันทึกธุรกรรม ทุกครั้งที่มีการกู้, คืน, โอน ฯลฯ
+ระบบ queue: ทุกการกู้ต้องรอ admin อนุมัติ, มี notification/alert
+Cooldown, maxLimit, historyLimit: ตรวจสอบก่อนอนุมัติ
+RMT override: admin override ทุกคำสั่ง
+ตอบกลับแนวกวน/ปั่น ทุก command
+6. ตัวอย่างโฟลว์ (เช่น !เบิก)
+User: !เบิก 500
+Bot: “ขอวงเงิน 500 SharkCredit รอแอดมินหลามรอดก่อนนะจ๊ะ!”
+Insert queue → แจ้ง admin
+Admin: !หลามรอด @user
+Bot: “วงเงิน 500 SharkCredit อนุมัติแล้วจ้า!”
+7. แผนการสร้างโค้ด
+สร้างไฟล์โครงสร้างใหม่ (bot.py, db.py, commands/)
+เชื่อมต่อ Discord API และ Supabase/PostgreSQL
+เขียน handler สำหรับแต่ละกลุ่มคำสั่ง
+สร้างระบบ queue, ประวัติ, manual approval
+ใส่ฟีเจอร์ปั่น/มุก/สุ่ม/เตือน
+ทดสอบและ deploy
