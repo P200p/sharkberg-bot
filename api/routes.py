@@ -7,15 +7,30 @@ import logging
 from typing import Dict
 
 import requests
-from fastapi import FastAPI, Request, HTTPException
+from fastapi import FastAPI, APIRouter, Request, BackgroundTasks, HTTPException, status, Depends
+from fastapi.responses import JSONResponse
+import logging
 
-from config import config
-
-
-# Configure logging
-logger = logging.getLogger(__name__)
 app = FastAPI()
 
+import logging
+from typing import Dict
+
+import requests
+from fastapi import APIRouter, Request, Depends, HTTPException, status
+from fastapi.responses import JSONResponse
+from fastapi.security import OAuth2PasswordBearer
+from typing import List
+
+router = APIRouter()
+
+@router.get("/items/", response_model=List[str])
+async def read_items():
+    return [
+        "item1",
+        "item2",
+        "item3"
+    ]
 
 @app.post("/chat")
 async def chat_endpoint(request: Request) -> Dict[str, str]:

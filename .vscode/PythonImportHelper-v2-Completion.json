@@ -1,5 +1,103 @@
 [
     {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
         "label": "discord",
         "kind": 6,
         "isExtraImport": true,
@@ -89,6 +187,14 @@
         "documentation": {}
     },
     {
+        "label": "record_transaction",
+        "importPath": "db",
+        "description": "db",
+        "isExtraImport": true,
+        "detail": "db",
+        "documentation": {}
+    },
+    {
         "label": "create_loan",
         "importPath": "db",
         "description": "db",
@@ -162,46 +268,6 @@
     },
     {
         "label": "set_display_name",
-        "importPath": "db",
-        "description": "db",
-        "isExtraImport": true,
-        "detail": "db",
-        "documentation": {}
-    },
-    {
-        "label": "record_transaction",
-        "importPath": "db",
-        "description": "db",
-        "isExtraImport": true,
-        "detail": "db",
-        "documentation": {}
-    },
-    {
-        "label": "get_user",
-        "importPath": "db",
-        "description": "db",
-        "isExtraImport": true,
-        "detail": "db",
-        "documentation": {}
-    },
-    {
-        "label": "create_loan",
-        "importPath": "db",
-        "description": "db",
-        "isExtraImport": true,
-        "detail": "db",
-        "documentation": {}
-    },
-    {
-        "label": "approve_loan",
-        "importPath": "db",
-        "description": "db",
-        "isExtraImport": true,
-        "detail": "db",
-        "documentation": {}
-    },
-    {
-        "label": "record_transaction",
         "importPath": "db",
         "description": "db",
         "isExtraImport": true,
@@ -223,15 +289,6 @@
         "description": "collections",
         "isExtraImport": true,
         "detail": "collections",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "datetime",
-        "description": "datetime",
-        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -259,21 +316,19 @@
         "documentation": {}
     },
     {
-        "label": "os",
-        "kind": 6,
+        "label": "timezone",
+        "importPath": "datetime",
+        "description": "datetime",
         "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
+        "detail": "datetime",
         "documentation": {}
     },
     {
-        "label": "json",
-        "kind": 6,
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
         "isExtraImport": true,
-        "importPath": "json",
-        "description": "json",
-        "detail": "json",
+        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -286,53 +341,70 @@
         "documentation": {}
     },
     {
-        "label": "load_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
-        "isExtraImport": true,
-        "detail": "dotenv",
-        "documentation": {}
-    },
-    {
-        "label": "load_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
-        "isExtraImport": true,
-        "detail": "dotenv",
-        "documentation": {}
-    },
-    {
-        "label": "now_iso",
-        "importPath": "utils",
-        "description": "utils",
-        "isExtraImport": true,
-        "detail": "utils",
-        "documentation": {}
-    },
-    {
-        "label": "minutes_since",
-        "importPath": "utils",
-        "description": "utils",
-        "isExtraImport": true,
-        "detail": "utils",
-        "documentation": {}
-    },
-    {
-        "label": "requests",
+        "label": "json",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "requests",
-        "description": "requests",
-        "detail": "requests",
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
         "documentation": {}
     },
     {
-        "label": "pathlib",
-        "kind": 6,
-        "isExtraImport": true,
+        "label": "Path",
         "importPath": "pathlib",
         "description": "pathlib",
+        "isExtraImport": true,
         "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "aiohttp",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "aiohttp",
+        "description": "aiohttp",
+        "detail": "aiohttp",
+        "documentation": {}
+    },
+    {
+        "label": "Thread",
+        "importPath": "threading",
+        "description": "threading",
+        "isExtraImport": true,
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
         "documentation": {}
     },
     {
@@ -402,12 +474,21 @@
         "documentation": {}
     },
     {
-        "label": "aiohttp",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "aiohttp",
-        "description": "aiohttp",
-        "detail": "aiohttp",
+        "label": "logger",
+        "kind": 5,
+        "importPath": "api.routes",
+        "description": "api.routes",
+        "peekOfCode": "logger = logging.getLogger(__name__)\napp = FastAPI()\n@app.post(\"/chat\")\nasync def chat_endpoint(request: Request) -> Dict[str, str]:\n    \"\"\"Handle chat requests to the Together.ai API.\n    Args:\n        request: The incoming request containing the message.\n    Returns:\n        Dict[str, str]: A dictionary containing the AI's reply.\n    Raises:",
+        "detail": "api.routes",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "api.routes",
+        "description": "api.routes",
+        "peekOfCode": "app = FastAPI()\n@app.post(\"/chat\")\nasync def chat_endpoint(request: Request) -> Dict[str, str]:\n    \"\"\"Handle chat requests to the Together.ai API.\n    Args:\n        request: The incoming request containing the message.\n    Returns:\n        Dict[str, str]: A dictionary containing the AI's reply.\n    Raises:\n        HTTPException: If there's an error processing the request.",
+        "detail": "api.routes",
         "documentation": {}
     },
     {
@@ -429,60 +510,6 @@
         "documentation": {}
     },
     {
-        "label": "LoanCog",
-        "kind": 6,
-        "importPath": "commands.loan",
-        "description": "commands.loan",
-        "peekOfCode": "class LoanCog(commands.Cog):\n    def __init__(self, bot):\n        self.bot = bot\n    @commands.command(name=\"เบิก\")\n    async def request_loan(self, ctx, amount: int):\n        import random\n        user_id = str(ctx.author.id)\n        guild_id = str(ctx.guild.id)\n<<<<<<< Updated upstream\n        if is_borrow_spammer(user_id):",
-        "detail": "commands.loan",
-        "documentation": {}
-    },
-    {
-        "label": "is_borrow_spammer",
-        "kind": 2,
-        "importPath": "commands.loan",
-        "description": "commands.loan",
-        "peekOfCode": "def is_borrow_spammer(user_id):\n    now = datetime.now(datetime.timezone.utc)\n    borrow_log[user_id] = [\n        t for t in borrow_log[user_id] if now - t < timedelta(minutes=30)\n    ]\n    borrow_log[user_id].append(now)\n    return len(borrow_log[user_id]) > 3\n=======\nimport discord\nfrom discord.ext import commands",
-        "detail": "commands.loan",
-        "documentation": {}
-    },
-    {
-        "label": "borrow_log",
-        "kind": 5,
-        "importPath": "commands.loan",
-        "description": "commands.loan",
-        "peekOfCode": "borrow_log = defaultdict(list)\nADMIN_ID = \"767982567604879371\"\ndef is_borrow_spammer(user_id):\n    now = datetime.now(datetime.timezone.utc)\n    borrow_log[user_id] = [\n        t for t in borrow_log[user_id] if now - t < timedelta(minutes=30)\n    ]\n    borrow_log[user_id].append(now)\n    return len(borrow_log[user_id]) > 3\n=======",
-        "detail": "commands.loan",
-        "documentation": {}
-    },
-    {
-        "label": "ADMIN_ID",
-        "kind": 5,
-        "importPath": "commands.loan",
-        "description": "commands.loan",
-        "peekOfCode": "ADMIN_ID = \"767982567604879371\"\ndef is_borrow_spammer(user_id):\n    now = datetime.now(datetime.timezone.utc)\n    borrow_log[user_id] = [\n        t for t in borrow_log[user_id] if now - t < timedelta(minutes=30)\n    ]\n    borrow_log[user_id].append(now)\n    return len(borrow_log[user_id]) > 3\n=======\nimport discord",
-        "detail": "commands.loan",
-        "documentation": {}
-    },
-    {
-        "label": "ProfileCog",
-        "kind": 6,
-        "importPath": "commands.profile",
-        "description": "commands.profile",
-        "peekOfCode": "class ProfileCog(commands.Cog):\n    def __init__(self, bot):\n        self.bot = bot  # เก็บ instance ของบอทไว้ใช้งานในคำสั่งต่าง ๆ\n    @commands.command(name=\"ชื่อผู้ใช้\")\n    async def set_user_name(self, ctx, *, name: str):\n        # ดึง ID ของผู้ใช้และเซิร์ฟเวอร์จาก context\n        user_id = str(ctx.author.id)\n        guild_id = str(ctx.guild.id)\n        # บันทึกชื่อผู้ใช้ใหม่ในฐานข้อมูล\n        set_display_name(user_id, guild_id, name)",
-        "detail": "commands.profile",
-        "documentation": {}
-    },
-    {
-        "label": "ProfileCog",
-        "kind": 6,
-        "importPath": "commands.profile",
-        "description": "commands.profile",
-        "peekOfCode": "class ProfileCog(commands.Cog):\n    def __init__(self, bot):\n        self.bot = bot\n    @commands.command(name=\"ชื่อฉลาม\")\n    async def set_shark_name(self, ctx, *, name: str):\n        user_id = str(ctx.author.id)\n        guild_id = str(ctx.guild.id)\n        set_display_name(user_id, guild_id, name)\n        await ctx.send(f\"เปลี่ยนชื่อฉลามของคุณเป็น {name} เรียบร้อย!\")\n    @commands.command(name=\"status\")",
-        "detail": "commands.profile",
-        "documentation": {}
-    },
-    {
         "label": "TransferCog",
         "kind": 6,
         "importPath": "commands.transfer",
@@ -492,11 +519,65 @@
         "documentation": {}
     },
     {
+        "label": "LoanCog",
+        "kind": 6,
+        "importPath": "commands_disabled.loan",
+        "description": "commands_disabled.loan",
+        "peekOfCode": "class LoanCog(commands.Cog):\n    def __init__(self, bot):\n        self.bot = bot\n    @commands.command(name=\"เบิก\")\n    async def request_loan(self, ctx, amount: int):\n        import random\n        user_id = str(ctx.author.id)\n        guild_id = str(ctx.guild.id)\n<<<<<<< Updated upstream\n        if is_borrow_spammer(user_id):",
+        "detail": "commands_disabled.loan",
+        "documentation": {}
+    },
+    {
+        "label": "is_borrow_spammer",
+        "kind": 2,
+        "importPath": "commands_disabled.loan",
+        "description": "commands_disabled.loan",
+        "peekOfCode": "def is_borrow_spammer(user_id):\n    now = datetime.now(datetime.timezone.utc)\n    borrow_log[user_id] = [\n        t for t in borrow_log[user_id] if now - t < timedelta(minutes=30)\n    ]\n    borrow_log[user_id].append(now)\n    return len(borrow_log[user_id]) > 3\n=======\nimport discord\nfrom discord.ext import commands",
+        "detail": "commands_disabled.loan",
+        "documentation": {}
+    },
+    {
+        "label": "borrow_log",
+        "kind": 5,
+        "importPath": "commands_disabled.loan",
+        "description": "commands_disabled.loan",
+        "peekOfCode": "borrow_log = defaultdict(list)\nADMIN_ID = \"767982567604879371\"\ndef is_borrow_spammer(user_id):\n    now = datetime.now(datetime.timezone.utc)\n    borrow_log[user_id] = [\n        t for t in borrow_log[user_id] if now - t < timedelta(minutes=30)\n    ]\n    borrow_log[user_id].append(now)\n    return len(borrow_log[user_id]) > 3\n=======",
+        "detail": "commands_disabled.loan",
+        "documentation": {}
+    },
+    {
+        "label": "ADMIN_ID",
+        "kind": 5,
+        "importPath": "commands_disabled.loan",
+        "description": "commands_disabled.loan",
+        "peekOfCode": "ADMIN_ID = \"767982567604879371\"\ndef is_borrow_spammer(user_id):\n    now = datetime.now(datetime.timezone.utc)\n    borrow_log[user_id] = [\n        t for t in borrow_log[user_id] if now - t < timedelta(minutes=30)\n    ]\n    borrow_log[user_id].append(now)\n    return len(borrow_log[user_id]) > 3\n=======\nimport discord",
+        "detail": "commands_disabled.loan",
+        "documentation": {}
+    },
+    {
+        "label": "ProfileCog",
+        "kind": 6,
+        "importPath": "commands_disabled.profile",
+        "description": "commands_disabled.profile",
+        "peekOfCode": "class ProfileCog(commands.Cog):\n    def __init__(self, bot):\n        self.bot = bot  # เก็บ instance ของบอทไว้ใช้งานในคำสั่งต่าง ๆ\n    @commands.command(name=\"ชื่อผู้ใช้\")\n    async def set_user_name(self, ctx, *, name: str):\n        # ดึง ID ของผู้ใช้และเซิร์ฟเวอร์จาก context\n        user_id = str(ctx.author.id)\n        guild_id = str(ctx.guild.id)\n        # บันทึกชื่อผู้ใช้ใหม่ในฐานข้อมูล\n        set_display_name(user_id, guild_id, name)",
+        "detail": "commands_disabled.profile",
+        "documentation": {}
+    },
+    {
+        "label": "ProfileCog",
+        "kind": 6,
+        "importPath": "commands_disabled.profile",
+        "description": "commands_disabled.profile",
+        "peekOfCode": "class ProfileCog(commands.Cog):\n    def __init__(self, bot):\n        self.bot = bot\n    @commands.command(name=\"ชื่อฉลาม\")\n    async def set_shark_name(self, ctx, *, name: str):\n        user_id = str(ctx.author.id)\n        guild_id = str(ctx.guild.id)\n        set_display_name(user_id, guild_id, name)\n        await ctx.send(f\"เปลี่ยนชื่อฉลามของคุณเป็น {name} เรียบร้อย!\")\n    @commands.command(name=\"status\")",
+        "detail": "commands_disabled.profile",
+        "documentation": {}
+    },
+    {
         "label": "save_last_msg",
         "kind": 2,
         "importPath": "bot",
         "description": "bot",
-        "peekOfCode": "def save_last_msg():\n    with open(LAST_MSG_FILE, \"w\") as f:\n        json.dump({str(k): v.isoformat() for k, v in last_msg.items()}, f)\ndef load_last_msg():\n    global last_msg\n    try:\n        with open(LAST_MSG_FILE, \"r\") as f:\n            last_msg = {\n                int(k): datetime.datetime.fromisoformat(v)\n                for k, v in json.load(f).items()",
+        "peekOfCode": "def save_last_msg() -> None:\n    \"\"\"Save the last message times to a JSON file.\"\"\"\n    try:\n        with open(config.LAST_MSG_FILE, \"w\", encoding=\"utf-8\") as f:\n            json.dump(\n                {str(k): v.isoformat() for k, v in last_msg.items()},\n                f,\n                ensure_ascii=False,\n                indent=2,\n            )",
         "detail": "bot",
         "documentation": {}
     },
@@ -505,7 +586,16 @@
         "kind": 2,
         "importPath": "bot",
         "description": "bot",
-        "peekOfCode": "def load_last_msg():\n    global last_msg\n    try:\n        with open(LAST_MSG_FILE, \"r\") as f:\n            last_msg = {\n                int(k): datetime.datetime.fromisoformat(v)\n                for k, v in json.load(f).items()\n            }\n    except (FileNotFoundError, json.JSONDecodeError):\n        print(\"Warning: Could not load last message data. Starting fresh.\")",
+        "peekOfCode": "def load_last_msg() -> None:\n    \"\"\"Load the last message times from a JSON file.\"\"\"\n    global last_msg\n    try:\n        with open(config.LAST_MSG_FILE, \"r\", encoding=\"utf-8\") as f:\n            last_msg = {\n                int(k): datetime.fromisoformat(v)\n                for k, v in json.load(f).items()\n            }\n        logger.info(\"Successfully loaded last message times\")",
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "create_fastapi_app",
+        "kind": 2,
+        "importPath": "bot",
+        "description": "bot",
+        "peekOfCode": "def create_fastapi_app() -> FastAPI:\n    \"\"\"Create and configure the FastAPI application.\"\"\"\n    from api.routes import app as api_router\n    return api_router\nasync def main() -> None:\n    \"\"\"Main entry point for the bot.\"\"\"\n    try:\n        await load_extensions()\n        async with bot:\n            await bot.start(config.TOKEN)",
         "detail": "bot",
         "documentation": {}
     },
@@ -514,52 +604,16 @@
         "kind": 2,
         "importPath": "bot",
         "description": "bot",
-        "peekOfCode": "def run_fastapi():\n    import uvicorn\n    uvicorn.run(fastapi_app, host=\"0.0.0.0\", port=8000)\nif __name__ == \"__main__\":\n    try:\n        print(f\"TOKEN: {TOKEN[:10]}... (length: {len(TOKEN) if TOKEN else 0})\")\n        # run bot + fastapi together\n        Thread(target=run_fastapi, daemon=True).start()\n        asyncio.run(main())\n    except Exception as e:",
+        "peekOfCode": "def run_fastapi() -> None:\n    \"\"\"Run the FastAPI server.\"\"\"\n    import uvicorn\n    from api.routes import app as fastapi_app\n    uvicorn.run(fastapi_app, host=\"0.0.0.0\", port=8000)\nif __name__ == \"__main__\":\n    try:\n        print(f\"Starting bot with token: {config.TOKEN[:10]}...\")\n        print(f\"Token length: {len(config.TOKEN)}\")\n        # Run bot + FastAPI together",
         "detail": "bot",
         "documentation": {}
     },
     {
-        "label": "TOKEN",
+        "label": "logger",
         "kind": 5,
         "importPath": "bot",
         "description": "bot",
-        "peekOfCode": "TOKEN = os.getenv(\"DISCORD_TOKEN\")\nMAIN_CHANNEL_ID = int(os.getenv(\"MAIN_CHANNEL_ID\", \"0\"))\nLAST_MSG_FILE = \"data/last_msg.json\"\nAPI_KEY = os.getenv(\"TOGETHER_API_KEY\", \"\")\nMODEL = os.getenv(\"TOGETHER_MODEL\", \"mistralai/Mistral-7B-Instruct-v0.2\")\nif not API_KEY:\n    raise ValueError(\"❌ TOGETHER_API_KEY not found in .env\")\n# เตรียม intents\nintents = discord.Intents.default()\nintents.message_content = True",
-        "detail": "bot",
-        "documentation": {}
-    },
-    {
-        "label": "MAIN_CHANNEL_ID",
-        "kind": 5,
-        "importPath": "bot",
-        "description": "bot",
-        "peekOfCode": "MAIN_CHANNEL_ID = int(os.getenv(\"MAIN_CHANNEL_ID\", \"0\"))\nLAST_MSG_FILE = \"data/last_msg.json\"\nAPI_KEY = os.getenv(\"TOGETHER_API_KEY\", \"\")\nMODEL = os.getenv(\"TOGETHER_MODEL\", \"mistralai/Mistral-7B-Instruct-v0.2\")\nif not API_KEY:\n    raise ValueError(\"❌ TOGETHER_API_KEY not found in .env\")\n# เตรียม intents\nintents = discord.Intents.default()\nintents.message_content = True\nbot = commands.Bot(command_prefix=\"!\", intents=intents)",
-        "detail": "bot",
-        "documentation": {}
-    },
-    {
-        "label": "LAST_MSG_FILE",
-        "kind": 5,
-        "importPath": "bot",
-        "description": "bot",
-        "peekOfCode": "LAST_MSG_FILE = \"data/last_msg.json\"\nAPI_KEY = os.getenv(\"TOGETHER_API_KEY\", \"\")\nMODEL = os.getenv(\"TOGETHER_MODEL\", \"mistralai/Mistral-7B-Instruct-v0.2\")\nif not API_KEY:\n    raise ValueError(\"❌ TOGETHER_API_KEY not found in .env\")\n# เตรียม intents\nintents = discord.Intents.default()\nintents.message_content = True\nbot = commands.Bot(command_prefix=\"!\", intents=intents)\n# ดึงไฟล์คำสั่งทั้งหมดใน /commands",
-        "detail": "bot",
-        "documentation": {}
-    },
-    {
-        "label": "API_KEY",
-        "kind": 5,
-        "importPath": "bot",
-        "description": "bot",
-        "peekOfCode": "API_KEY = os.getenv(\"TOGETHER_API_KEY\", \"\")\nMODEL = os.getenv(\"TOGETHER_MODEL\", \"mistralai/Mistral-7B-Instruct-v0.2\")\nif not API_KEY:\n    raise ValueError(\"❌ TOGETHER_API_KEY not found in .env\")\n# เตรียม intents\nintents = discord.Intents.default()\nintents.message_content = True\nbot = commands.Bot(command_prefix=\"!\", intents=intents)\n# ดึงไฟล์คำสั่งทั้งหมดใน /commands\nimport pathlib",
-        "detail": "bot",
-        "documentation": {}
-    },
-    {
-        "label": "MODEL",
-        "kind": 5,
-        "importPath": "bot",
-        "description": "bot",
-        "peekOfCode": "MODEL = os.getenv(\"TOGETHER_MODEL\", \"mistralai/Mistral-7B-Instruct-v0.2\")\nif not API_KEY:\n    raise ValueError(\"❌ TOGETHER_API_KEY not found in .env\")\n# เตรียม intents\nintents = discord.Intents.default()\nintents.message_content = True\nbot = commands.Bot(command_prefix=\"!\", intents=intents)\n# ดึงไฟล์คำสั่งทั้งหมดใน /commands\nimport pathlib\nasync def load_extensions() -> None:",
+        "peekOfCode": "logger = logging.getLogger(__name__)\n# Initialize bot with intents\nintents = discord.Intents.default()\nintents.message_content = True\nbot = commands.Bot(command_prefix=\"!\", intents=intents)\n# Type aliases\nGuildID = int\nLastMessageTimes = Dict[GuildID, datetime]\n# Global state\nlast_msg: LastMessageTimes = {}",
         "detail": "bot",
         "documentation": {}
     },
@@ -568,7 +622,7 @@
         "kind": 5,
         "importPath": "bot",
         "description": "bot",
-        "peekOfCode": "intents = discord.Intents.default()\nintents.message_content = True\nbot = commands.Bot(command_prefix=\"!\", intents=intents)\n# ดึงไฟล์คำสั่งทั้งหมดใน /commands\nimport pathlib\nasync def load_extensions() -> None:\n    \"\"\"\n    Loads all extension modules in the \"commands/\" directory.\n    This function goes through all Python files in the \"commands/\" directory,\n    loads them as extension modules, and prints a message to the console",
+        "peekOfCode": "intents = discord.Intents.default()\nintents.message_content = True\nbot = commands.Bot(command_prefix=\"!\", intents=intents)\n# Type aliases\nGuildID = int\nLastMessageTimes = Dict[GuildID, datetime]\n# Global state\nlast_msg: LastMessageTimes = {}\n# Song lyrics for inactivity messages\nLYRICS = [",
         "detail": "bot",
         "documentation": {}
     },
@@ -577,7 +631,7 @@
         "kind": 5,
         "importPath": "bot",
         "description": "bot",
-        "peekOfCode": "intents.message_content = True\nbot = commands.Bot(command_prefix=\"!\", intents=intents)\n# ดึงไฟล์คำสั่งทั้งหมดใน /commands\nimport pathlib\nasync def load_extensions() -> None:\n    \"\"\"\n    Loads all extension modules in the \"commands/\" directory.\n    This function goes through all Python files in the \"commands/\" directory,\n    loads them as extension modules, and prints a message to the console\n    indicating whether the loading was successful or not.",
+        "peekOfCode": "intents.message_content = True\nbot = commands.Bot(command_prefix=\"!\", intents=intents)\n# Type aliases\nGuildID = int\nLastMessageTimes = Dict[GuildID, datetime]\n# Global state\nlast_msg: LastMessageTimes = {}\n# Song lyrics for inactivity messages\nLYRICS = [\n    \"ใจมันได้! สายปั่นต้องสู้!\",",
         "detail": "bot",
         "documentation": {}
     },
@@ -586,35 +640,53 @@
         "kind": 5,
         "importPath": "bot",
         "description": "bot",
-        "peekOfCode": "bot = commands.Bot(command_prefix=\"!\", intents=intents)\n# ดึงไฟล์คำสั่งทั้งหมดใน /commands\nimport pathlib\nasync def load_extensions() -> None:\n    \"\"\"\n    Loads all extension modules in the \"commands/\" directory.\n    This function goes through all Python files in the \"commands/\" directory,\n    loads them as extension modules, and prints a message to the console\n    indicating whether the loading was successful or not.\n    If an extension cannot be loaded, the error message is printed to the console.",
+        "peekOfCode": "bot = commands.Bot(command_prefix=\"!\", intents=intents)\n# Type aliases\nGuildID = int\nLastMessageTimes = Dict[GuildID, datetime]\n# Global state\nlast_msg: LastMessageTimes = {}\n# Song lyrics for inactivity messages\nLYRICS = [\n    \"ใจมันได้! สายปั่นต้องสู้!\",\n    \"หมุนต่อไม่รอแล้วนะ!\",",
         "detail": "bot",
         "documentation": {}
     },
     {
-        "label": "last_msg",
+        "label": "GuildID",
         "kind": 5,
         "importPath": "bot",
         "description": "bot",
-        "peekOfCode": "last_msg = {}\ndef save_last_msg():\n    with open(LAST_MSG_FILE, \"w\") as f:\n        json.dump({str(k): v.isoformat() for k, v in last_msg.items()}, f)\ndef load_last_msg():\n    global last_msg\n    try:\n        with open(LAST_MSG_FILE, \"r\") as f:\n            last_msg = {\n                int(k): datetime.datetime.fromisoformat(v)",
+        "peekOfCode": "GuildID = int\nLastMessageTimes = Dict[GuildID, datetime]\n# Global state\nlast_msg: LastMessageTimes = {}\n# Song lyrics for inactivity messages\nLYRICS = [\n    \"ใจมันได้! สายปั่นต้องสู้!\",\n    \"หมุนต่อไม่รอแล้วนะ!\",\n    \"สล็อตแตกง่าย ใครไม่ลองถือว่าพลาด!\",\n    \"ขอกำลังใจหน่อย จะหมุนแล้ว!\",",
         "detail": "bot",
         "documentation": {}
     },
     {
-        "label": "lyrics",
+        "label": "LastMessageTimes",
         "kind": 5,
         "importPath": "bot",
         "description": "bot",
-        "peekOfCode": "lyrics = [\n    \"ใจมันได้! สายปั่นต้องสู้!\",\n    \"หมุนต่อไม่รอแล้วนะ!\",\n    \"สล็อตแตกง่าย ใครไม่ลองถือว่าพลาด!\",\n    \"ขอกำลังใจหน่อย จะหมุนแล้ว!\",\n    \"ถ้าแตกวันนี้ จะไปวิ่งรอบบ้าน!\",\n    \"บอทสายปั่นขอแจ้งเตือน: อย่าลืมเติมน้ำก่อนหมุน!\",\n    \"ถ้าปั่นไม่แตก ลองเปลี่ยนมือหมุนดูมั้ย?\",\n    \"สูตรลับสายปั่น: ใส่ถุงเท้าก่อนเล่น เพิ่มโชค!\",\n    \"บอทยังฮาไม่เท่าเจ้าของเพจ x.com/Omgnhoy นะ!\",",
+        "peekOfCode": "LastMessageTimes = Dict[GuildID, datetime]\n# Global state\nlast_msg: LastMessageTimes = {}\n# Song lyrics for inactivity messages\nLYRICS = [\n    \"ใจมันได้! สายปั่นต้องสู้!\",\n    \"หมุนต่อไม่รอแล้วนะ!\",\n    \"สล็อตแตกง่าย ใครไม่ลองถือว่าพลาด!\",\n    \"ขอกำลังใจหน่อย จะหมุนแล้ว!\",\n    \"ถ้าแตกวันนี้ จะไปวิ่งรอบบ้าน!\",",
         "detail": "bot",
         "documentation": {}
     },
     {
-        "label": "fastapi_app",
+        "label": "LYRICS",
         "kind": 5,
         "importPath": "bot",
         "description": "bot",
-        "peekOfCode": "fastapi_app = FastAPI()\n@fastapi_app.post(\"/chat\")\nasync def chat(request: Request):\n    data = await request.json()\n    message = data.get(\"message\", \"\")\n    headers = {\"Authorization\": f\"Bearer {API_KEY}\", \"Content-Type\": \"application/json\"}\n    payload = {\n        \"model\": MODEL,\n        \"messages\": [\n            {",
+        "peekOfCode": "LYRICS = [\n    \"ใจมันได้! สายปั่นต้องสู้!\",\n    \"หมุนต่อไม่รอแล้วนะ!\",\n    \"สล็อตแตกง่าย ใครไม่ลองถือว่าพลาด!\",\n    \"ขอกำลังใจหน่อย จะหมุนแล้ว!\",\n    \"ถ้าแตกวันนี้ จะไปวิ่งรอบบ้าน!\",\n    \"บอทสายปั่นขอแจ้งเตือน: อย่าลืมเติมน้ำก่อนหมุน!\",\n    \"ถ้าปั่นไม่แตก ลองเปลี่ยนมือหมุนดูมั้ย?\",\n    \"สูตรลับสายปั่น: ใส่ถุงเท้าก่อนเล่น เพิ่มโชค!\",\n    \"บอทยังฮาไม่เท่าเจ้าของเพจ x.com/Omgnhoy นะ!\",",
         "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "Config",
+        "kind": 6,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "class Config:\n    \"\"\"Bot configuration settings.\n    This class holds all configuration parameters required by the bot,\n    loaded from environment variables with sensible defaults where applicable.\n    \"\"\"\n    TOKEN: str = os.getenv(\"DISCORD_TOKEN\", \"\")\n    MAIN_CHANNEL_ID: int = int(os.getenv(\"MAIN_CHANNEL_ID\", \"0\"))\n    TOGETHER_API_KEY: str = os.getenv(\"TOGETHER_API_KEY\", \"\")\n    TOGETHER_MODEL: str = os.getenv(\n        \"TOGETHER_MODEL\",",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "config = Config()\n# Validate configuration on import\ntry:\n    config.validate()\nexcept ValueError as e:\n    print(f\"❌ Configuration error: {e}\")\n    raise",
+        "detail": "config",
         "documentation": {}
     },
     {

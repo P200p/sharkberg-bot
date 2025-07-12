@@ -14,11 +14,11 @@ import logging
 import random
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Dict, Optional
+from typing import Dict
 
 import discord
 from discord.ext import commands, tasks
-from fastapi import FastAPI, Request
+from fastapi import FastAPI
 import aiohttp
 from threading import Thread
 
@@ -150,6 +150,13 @@ async def on_ready() -> None:
     
     logger.info("=" * 50)
     load_last_msg()
+
+    # Sync all application (slash) commands
+    try:
+        await bot.tree.sync()
+        logger.info("Slash commands synced with Discord.")
+    except Exception as e:
+        logger.error(f"Failed to sync slash commands: {e}")
     
     if not check_inactivity.is_running():
         check_inactivity.start()
@@ -220,7 +227,7 @@ async def main() -> None:
     try:
         await load_extensions()
         async with bot:
-            await bot.start(config.TOKEN)
+            await bot.start(config.DISCORD_TOKEN)
     except KeyboardInterrupt:
         logger.info("Bot shutting down...")
     except Exception as e:
@@ -240,8 +247,8 @@ def run_fastapi() -> None:
 
 if __name__ == "__main__":
     try:
-        print(f"Starting bot with token: {config.TOKEN[:10]}...")
-        print(f"Token length: {len(config.TOKEN)}")
+        print(f"Starting bot with token: {config.DISCORD_TOKEN[:10]}...")
+        print(f"Token length: {len(config.DISCORD_TOKEN)}")
         
         # Run bot + FastAPI together
         import threading
@@ -253,7 +260,6 @@ if __name__ == "__main__":
         
         # Start the Discord bot
         asyncio.run(main())
-        
     except Exception as e:
         logger.critical("Bot encountered a fatal error", exc_info=True)
         print("\n[!] เกิดข้อผิดพลาดในการล็อกอิน Discord Bot")
